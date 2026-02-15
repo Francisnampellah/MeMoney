@@ -93,6 +93,14 @@ android {
             keyPassword 'android'
         }
     }
+    
+    // Vector Icons configuration
+    project.ext.vectoricons = [
+        iconFontNames: [ 'MaterialIcons.ttf' ]
+    ]
+    
+    apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
+    
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
