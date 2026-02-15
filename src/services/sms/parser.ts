@@ -16,7 +16,7 @@ export const mpesaParser = {
   /**
    * Parse a single M-Pesa SMS message
    */
-  parseSms: (rawText: string): ParsedTransaction | null => {
+  parseSms: (rawText: string, timestamp: number = 0): ParsedTransaction | null => {
     // 1. Validate Message (Must start with alphanumeric transaction code)
     if (!isValidMessage(rawText)) {
       return null;
@@ -63,7 +63,7 @@ export const mpesaParser = {
       direction,
       type,
       amount,
-      currency: 'TZS',
+      currency: 'Tsh',
       fee,
       government_levy: governmentLevy,
       counterparty_name: name,
@@ -71,6 +71,7 @@ export const mpesaParser = {
       channel,
       date,
       time,
+      timestamp,
       balance_after: balanceAfter,
       raw_text: rawText,
     };
@@ -133,6 +134,7 @@ export const mpesaParser = {
       counterparty_account: tx1.counterparty_account || tx2.counterparty_account,
       date: tx1.date || tx2.date, // Should be same
       time: tx1.time || tx2.time,
+      timestamp: Math.max(tx1.timestamp, tx2.timestamp),
       balance_after: tx1.balance_after !== null ? tx1.balance_after : tx2.balance_after,
       // Concatenate raw text
       raw_text: tx1.raw_text === tx2.raw_text ? tx1.raw_text : `${tx1.raw_text} | ${tx2.raw_text}`,

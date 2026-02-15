@@ -31,7 +31,7 @@ export interface ParsedTransaction {
   direction: TransactionDirection;
   type: TransactionType;
   amount: number;
-  currency: 'TZS';
+  currency: 'Tsh';
   fee: number;
   government_levy: number;
   counterparty_name: string | null;
@@ -39,6 +39,7 @@ export interface ParsedTransaction {
   channel: Channel;
   date: string; // YYYY-MM-DD
   time: string | null; // HH:MM:SS
+  timestamp: number;
   balance_after: number | null;
   raw_text: string;
 }

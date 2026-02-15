@@ -1,10 +1,15 @@
 import { NativeModules, PermissionsAndroid, Platform } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { SmsMessage } from '../../shared/types';
 import { mpesaParser } from './parser';
 import { ParsedTransaction, Transaction } from './types';
 
 const { SmsReader } = NativeModules;
 
+const STORAGE_KEYS = {
+  TRANSACTIONS: 'memoney_transactions',
+  LAST_SYNC_TIME: 'memoney_last_sync_time',
+};
 
 /**
  * SMS Service - Handles reading SMS messages from device
@@ -66,71 +71,111 @@ export const smsService = {
   },
 
   /**
-   * Read SMS messages from device
-   * Requires READ_SMS permission to be granted first
+   * Load transactions already saved in local storage
+   */
+  getStoredTransactions: async (): Promise<Transaction[]> => {
+    try {
+      const data = await AsyncStorage.getItem(STORAGE_KEYS.TRANSACTIONS);
+      if (!data) return [];
+      const transactions = JSON.parse(data) as Transaction[];
+      return transactions.sort((a, b) => b.timestamp - a.timestamp);
+    } catch (err) {
+      console.error('[SMS Service] Error loading stored transactions:', err);
+      return [];
+    }
+  },
+
+  /**
+   * Save transactions to local storage
+   */
+  saveTransactions: async (transactions: Transaction[]) => {
+    try {
+      await AsyncStorage.setItem(STORAGE_KEYS.TRANSACTIONS, JSON.stringify(transactions));
+    } catch (err) {
+      console.error('[SMS Service] Error saving transactions:', err);
+    }
+  },
+
+  /**
+   * Read SMS messages from device and sync with local storage
+   * Only processes messages since the last sync
    */
   readSms: async (): Promise<Transaction[]> => {
     try {
       if (Platform.OS !== 'android') return [];
 
-      const hasPermission = await SmsReader.hasPermission();
+      const hasPermission = await smsService.hasPermission();
       if (!hasPermission) {
         console.warn('SMS permission not granted');
         return [];
       }
 
-      // 1️⃣ Read SMS from native Android module
-      const messages: SmsMessage[] = await SmsReader.readInbox();
+      // 1. Get existing stored transactions
+      const storedTransactions = await smsService.getStoredTransactions();
 
-      // 2️⃣ Filter ONLY M-Pesa messages
-      const mpesaMessages = messages.filter(
+      // 2. Get the time of the last processed message
+      const lastSyncTimeStr = await AsyncStorage.getItem(STORAGE_KEYS.LAST_SYNC_TIME);
+      const lastSyncTime = lastSyncTimeStr ? parseInt(lastSyncTimeStr, 10) : 0;
+
+      // 3. Read SMS from native Android module - Prefer optimized method if available
+      let messages: SmsMessage[] = [];
+      if (SmsReader.readInboxFrom) {
+        messages = await SmsReader.readInboxFrom(lastSyncTime);
+      } else {
+        // Fallback for older builds that haven't recompiled yet
+        const allMessages: SmsMessage[] = await SmsReader.readInbox();
+        messages = allMessages.filter(m => m.date > lastSyncTime);
+      }
+
+      // 4. Filter for M-Pesa specific messages
+      const newMpesaMessages = messages.filter(
         m =>
           m.address &&
           /M-PESA/i.test(m.address) &&
           /Confirmed\./i.test(m.body)
       );
 
-      const transactions = mpesaMessages
-        .map(m => mpesaParser.parseSms(m.body))
+      console.log('[SMS Service] Found', newMpesaMessages.length, 'new M-Pesa messages since', new Date(lastSyncTime).toLocaleString());
+
+      if (newMpesaMessages.length === 0) {
+        return storedTransactions;
+      }
+
+      // 5. Parse only the new messages
+      const newTransactions = newMpesaMessages
+        .map(m => mpesaParser.parseSms(m.body, m.date))
         .filter((t): t is Transaction => t !== null);
 
-      return mpesaParser.deduplicateByTransactionId(transactions);
+      // 6. Merge with stored transactions and deduplicate
+      const allTransactions = [...newTransactions, ...storedTransactions];
+      const uniqueTransactions = mpesaParser.deduplicateByTransactionId(allTransactions);
 
+      // 7. Sort by timestamp descending (newest first)
+      uniqueTransactions.sort((a, b) => b.timestamp - a.timestamp);
+
+      // 8. Update local storage
+      await smsService.saveTransactions(uniqueTransactions);
+
+      // Update last sync time to the newest message date found
+      const maxDate = Math.max(...messages.map(m => m.date), lastSyncTime);
+      await AsyncStorage.setItem(STORAGE_KEYS.LAST_SYNC_TIME, maxDate.toString());
+
+      return uniqueTransactions;
 
     } catch (err) {
-      console.error('SMS Read Error:', err);
-      return [];
+      console.error('SMS Sync Error:', err);
+      // Fallback: return what we have stored
+      return await smsService.getStoredTransactions();
     }
   },
 
   /**
-   * Search for transaction-related SMS messages
-   */
-  //   searchTransactionSms: async (query: string): Promise<SmsMessage[]> => {
-  //     try {
-  //       const messages = await smsService.readSms();
-  //       return messages.filter(msg =>
-  //         msg.body.toLowerCase().includes(query.toLowerCase())
-  //       );
-  //     } catch (err) {
-  //       console.error('SMS Search Error:', err);
-  //       return [];
-  //     }
-  //   },
-
-  /**
    * Parse multiple M-Pesa SMS messages
    * Automatically deduplicates by transaction_id (primary key)
-   * Returns only one record per unique transaction_id
    */
   parseMpesaSmsList: (smsList: string[]): ParsedTransaction[] => {
     console.log('[SMS Service] Parsing', smsList.length, 'M-Pesa SMS messages');
     const parsed = mpesaParser.parseSmsList(smsList);
-    console.log(
-      '[SMS Service] After deduplication:',
-      parsed.length,
-      'unique transactions',
-    );
     return parsed;
   },
 };

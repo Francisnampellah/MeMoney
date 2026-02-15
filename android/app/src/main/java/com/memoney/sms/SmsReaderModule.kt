@@ -27,9 +27,17 @@ class SmsReaderModule(private val reactContext: ReactApplicationContext) :
 
   @ReactMethod
   fun readInbox(promise: Promise) {
+    readInboxFrom(0.0, promise)
+  }
+
+  @ReactMethod
+  fun readInboxFrom(since: Double, promise: Promise) {
     val smsUri = Uri.parse("content://sms/inbox")
+    val selection = "date > ?"
+    val selectionArgs = arrayOf(since.toLong().toString())
+    
     val cursor: Cursor? =
-      reactContext.contentResolver.query(smsUri, null, null, null, "date DESC")
+      reactContext.contentResolver.query(smsUri, null, selection, selectionArgs, "date DESC")
 
     val result = WritableNativeArray()
 

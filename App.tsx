@@ -13,6 +13,7 @@ import { HomeScreen } from './src/features/home/HomeScreen';
 import { TransactionDetail } from './src/features/transactions/TransactionDetail';
 import { AnalysisScreen } from './src/features/analysis/AnalysisScreen';
 import { SettingsScreen } from './src/features/settings/SettingsScreen';
+import { TransactionsHistory } from './src/features/transactions/TransactionsHistory';
 import { BottomTabBar, Tab } from './src/components/BottomTabBar';
 import { Header } from './src/components/Header';
 import Share from 'react-native-share';
@@ -24,6 +25,7 @@ function App() {
   const [selectedTransaction, setSelectedTransaction] = useState<Transaction | null>(null);
   const [activeTab, setActiveTab] = useState<Tab>('home');
   const [activeHeaderTab, setActiveHeaderTab] = useState('Overview');
+  const [showHistory, setShowHistory] = useState(false);
 
   const handlePrint = async () => {
     if (!selectedTransaction) return;
@@ -63,15 +65,34 @@ function App() {
       );
     }
 
+    if (showHistory) {
+      return (
+        <TransactionsHistory
+          onTransactionSelect={setSelectedTransaction}
+          onBack={() => setShowHistory(false)}
+        />
+      );
+    }
+
     switch (activeTab) {
       case 'home':
-        return <HomeScreen onTransactionSelect={setSelectedTransaction} />;
+        return (
+          <HomeScreen
+            onTransactionSelect={setSelectedTransaction}
+            onViewAll={() => setShowHistory(true)}
+          />
+        );
       case 'analysis':
         return <AnalysisScreen />;
       case 'settings':
         return <SettingsScreen />;
       default:
-        return <HomeScreen onTransactionSelect={setSelectedTransaction} />;
+        return (
+          <HomeScreen
+            onTransactionSelect={setSelectedTransaction}
+            onViewAll={() => setShowHistory(true)}
+          />
+        );
     }
   };
 
@@ -83,17 +104,26 @@ function App() {
       <Header
         activeTab={activeHeaderTab}
         onTabSelect={setActiveHeaderTab}
-        showTabs={activeTab === 'home' && !selectedTransaction}
-        title={selectedTransaction ? 'Transaction Details' : undefined}
-        showBack={!!selectedTransaction}
-        onBack={() => setSelectedTransaction(null)}
+        showTabs={activeTab === 'home' && !selectedTransaction && !showHistory}
+        title={selectedTransaction ? 'Transaction Details' : showHistory ? 'All Transactions' : undefined}
+        showBack={!!selectedTransaction || showHistory}
+        onBack={() => {
+          if (selectedTransaction) {
+            setSelectedTransaction(null);
+          } else if (showHistory) {
+            setShowHistory(false);
+          }
+        }}
       />
 
       {renderContent()}
 
       <BottomTabBar
         activeTab={activeTab}
-        onTabSelect={setActiveTab}
+        onTabSelect={(tab) => {
+          setActiveTab(tab);
+          setShowHistory(false);
+        }}
         showTransactionActions={!!selectedTransaction}
         onPrint={handlePrint}
         onShare={handleShare}

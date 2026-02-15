@@ -13,29 +13,31 @@ import { useSmsPermission } from '../../services/sms';
 import { useMpesaSms } from '../../services/sms/useMpesaSms';
 import { Transaction } from '../../services/sms/types';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { useAnalytics } from '../../services/analytics/useAnalytics';
+import { useSmartInsights } from '../../services/ai/useSmartInsights';
+import { abbreviateNumber } from '../../services/analytics/utils';
 
 interface HomeScreenProps {
     onTransactionSelect: (transaction: Transaction) => void;
+    onViewAll: () => void;
 }
 
-export function HomeScreen({ onTransactionSelect }: HomeScreenProps) {
+export function HomeScreen({ onTransactionSelect, onViewAll }: HomeScreenProps) {
     const safeAreaInsets = useSafeAreaInsets();
     const { hasPermission, requestPermission, isLoading: isPermissionLoading } = useSmsPermission();
-    const { transactions, loading, error, refresh } = useMpesaSms();
+    const { transactions, loading: smsLoading, error, refresh } = useMpesaSms();
+    const { stats, loading: analyticsLoading } = useAnalytics();
+    const { insights, loading: aiLoading } = useSmartInsights();
 
     // Search and Filter State
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedFilter, setSelectedFilter] = useState<'all' | 'received' | 'sent'>('all');
     const [transactionLimit, setTransactionLimit] = useState(5);
 
-    // Calculate total balance and P&L
-    const totalBalance = transactions.reduce((sum, tx) => {
-        return sum + (tx.direction === 'RECEIVED' ? tx.amount : -tx.amount);
-    }, 0);
-
-    const todayPnL = transactions
-        .filter(tx => tx.date === new Date().toISOString().split('T')[0])
-        .reduce((sum, tx) => sum + (tx.direction === 'RECEIVED' ? tx.amount : -tx.amount), 0);
+    // Get latest remaining balance from the most recent transaction
+    const latestTxWithBalance = transactions.find(tx => tx.balance_after !== null);
+    const totalBalance = latestTxWithBalance?.balance_after ?? 0;
+    const currentCurrency = latestTxWithBalance?.currency ?? 'Tsh';
 
     const handleRequestSmsPermission = async () => {
         const granted = await requestPermission();
@@ -64,6 +66,8 @@ export function HomeScreen({ onTransactionSelect }: HomeScreenProps) {
         return true;
     });
 
+    const topInsight = insights[0];
+
     return (
         <ScrollView
             style={styles.container}
@@ -81,37 +85,52 @@ export function HomeScreen({ onTransactionSelect }: HomeScreenProps) {
                     </View>
                     <View style={styles.balanceAmountRow}>
                         <Text style={styles.balanceAmount}>
-                            $ {Math.floor(totalBalance).toLocaleString()}
+                            {currentCurrency} {Math.floor(totalBalance).toLocaleString()}
                         </Text>
                         <Text style={styles.balanceDecimal}>
                             ,{(totalBalance % 1).toFixed(2).split('.')[1]}
                         </Text>
                     </View>
                     <View style={styles.currencyBadge}>
-                        <Text style={styles.currencyText}>USDT</Text>
+                        <Text style={styles.currencyText}>{currentCurrency}</Text>
                     </View>
                 </View>
 
-                {/* PnL Card */}
+                {/* Analytics Overview Card */}
                 <View style={styles.pnlCard}>
                     <View style={styles.pnlHeader}>
                         <View>
-                            <Text style={styles.pnlLabel}>PnL</Text>
-                            <Text style={styles.pnlSubLabel}>Today</Text>
+                            <Text style={styles.pnlLabel}>Analytics Overview</Text>
+                            <Text style={styles.pnlSubLabel}>Last 30 Days</Text>
                         </View>
                         <TouchableOpacity>
-                            <Icon name="more-vert" size={20} color="#FFFFFF" />
+                            <Icon name="insights" size={20} color="#C5FF00" />
                         </TouchableOpacity>
                     </View>
-                    <View style={styles.pnlContent}>
-                        <View style={styles.pnlAmountSection}>
-                            <Text style={styles.pnlAmount}>+ $ {Math.abs(todayPnL).toLocaleString()}</Text>
-                            <Text style={styles.pnlPercentage}>+ 0.26%</Text>
+
+                    <View style={styles.analyticsDetailsRow}>
+                        <View style={styles.analyticItem}>
+                            <Text style={styles.analyticLabel}>Inflow</Text>
+                            <Text style={styles.analyticValueIn}>+ {currentCurrency} {abbreviateNumber(stats.income)}</Text>
                         </View>
-                        <View style={styles.chartPlaceholder}>
-                            <Icon name="show-chart" size={40} color="#C5FF00" />
+                        <View style={styles.analyticDivider} />
+                        <View style={styles.analyticItem}>
+                            <Text style={styles.analyticLabel}>Outflow</Text>
+                            <Text style={styles.analyticValueOut}>- {currentCurrency} {abbreviateNumber(stats.outcome)}</Text>
                         </View>
                     </View>
+
+                    {topInsight && (
+                        <View style={styles.homeInsightBox}>
+                            <View style={styles.homeInsightHeader}>
+                                <Icon name="lightbulb" size={14} color="#C5FF00" />
+                                <Text style={styles.homeInsightTitle}>AI TIP: {topInsight.title}</Text>
+                            </View>
+                            <Text style={styles.homeInsightDesc} numberOfLines={2}>
+                                {topInsight.description}
+                            </Text>
+                        </View>
+                    )}
                 </View>
 
                 {/* Action Buttons */}
@@ -239,9 +258,9 @@ export function HomeScreen({ onTransactionSelect }: HomeScreenProps) {
                         </View>
                     </View>
 
-                    {loading && <Text style={styles.loadingText}>Loading...</Text>}
+                    {smsLoading && <Text style={styles.loadingText}>Loading...</Text>}
 
-                    {!loading && transactions.length === 0 && (
+                    {!smsLoading && transactions.length === 0 && (
                         <View style={styles.emptyState}>
                             <Icon name="inbox" size={48} color="#CCCCCC" />
                             <Text style={styles.emptyText}>No transactions yet</Text>
@@ -268,13 +287,24 @@ export function HomeScreen({ onTransactionSelect }: HomeScreenProps) {
                                 </View>
                             </View>
                             <View style={styles.balanceItemRight}>
-                                <Text style={styles.tokenAmount}>{item.amount.toLocaleString()}</Text>
+                                <Text style={styles.tokenAmount}>{item.currency} {item.amount.toLocaleString()}</Text>
                                 <Text style={styles.tokenValue}>
-                                    $ {(item.amount * 1).toLocaleString()}
+                                    {item.direction === 'RECEIVED' ? '+' : '-'} {item.amount.toLocaleString()}
                                 </Text>
                             </View>
                         </TouchableOpacity>
                     ))}
+
+                    {filteredTransactions.length > transactionLimit && (
+                        <TouchableOpacity
+                            style={styles.viewAllButton}
+                            onPress={onViewAll}
+                            activeOpacity={0.7}
+                        >
+                            <Text style={styles.viewAllText}>View All Transactions</Text>
+                            <Icon name="chevron-right" size={20} color="#666" />
+                        </TouchableOpacity>
+                    )}
                 </View>
             </View>
         </ScrollView >
@@ -382,6 +412,59 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
     },
+    analyticsDetailsRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingVertical: 12,
+        gap: 16,
+    },
+    analyticItem: {
+        flex: 1,
+    },
+    analyticLabel: {
+        fontSize: 12,
+        color: '#999999',
+        marginBottom: 4,
+    },
+    analyticValueIn: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: '#C5FF00',
+    },
+    analyticValueOut: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: '#FFFFFF',
+    },
+    analyticDivider: {
+        width: 1,
+        height: 30,
+        backgroundColor: '#333333',
+    },
+    homeInsightBox: {
+        backgroundColor: '#1A1A1A',
+        borderRadius: 12,
+        padding: 12,
+        marginTop: 8,
+    },
+    homeInsightHeader: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 6,
+        marginBottom: 4,
+    },
+    homeInsightTitle: {
+        fontSize: 10,
+        fontWeight: 'bold',
+        color: '#C5FF00',
+        textTransform: 'uppercase',
+        letterSpacing: 0.5,
+    },
+    homeInsightDesc: {
+        fontSize: 12,
+        color: '#CCCCCC',
+        lineHeight: 16,
+    },
     pnlAmountSection: {
         flex: 1,
     },
@@ -473,8 +556,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
         borderRadius: 16,
         padding: 16,
-        borderWidth: 1,
-        borderColor: '#000000',
+        paddingBottom: 24,
     },
     balanceSectionHeader: {
         flexDirection: 'row',
@@ -515,8 +597,6 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         paddingVertical: 12,
-        borderBottomWidth: 1,
-        borderBottomColor: '#F0F0F0',
     },
     balanceItemLeft: {
         flexDirection: 'row',
@@ -650,5 +730,20 @@ const styles = StyleSheet.create({
     limitOptionTextActive: {
         color: '#000000',
         fontWeight: 'bold',
+    },
+    viewAllButton: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 16,
+        marginTop: 8,
+        backgroundColor: '#F5F5F7',
+        borderRadius: 12,
+        gap: 4,
+    },
+    viewAllText: {
+        fontSize: 14,
+        fontWeight: '600',
+        color: '#000000',
     },
 });
