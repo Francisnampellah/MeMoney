@@ -8,15 +8,41 @@ import {
     Platform,
     TouchableOpacity,
 } from 'react-native';
-import { Transaction } from '../../services/sms/types';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import { useRoute, RouteProp } from '@react-navigation/native';
+import { RootStackParamList } from '../../navigation/types';
+import { BottomTabBar } from '../../components/BottomTabBar';
+import Share from 'react-native-share';
+import RNPrint from 'react-native-print';
+import { generateReceiptHtml, getReceiptHtml } from '../../utils/pdfGenerator';
 
-type Props = {
-    transaction: Transaction;
-    onClose: () => void;
-};
+export function TransactionDetail() {
+    const route = useRoute<RouteProp<RootStackParamList, 'TransactionDetail'>>();
+    const { transaction } = route.params;
 
-export function TransactionDetail({ transaction, onClose }: Props) {
+    const handlePrint = async () => {
+        try {
+            const html = getReceiptHtml(transaction);
+            // @ts-ignore
+            await RNPrint.print({ html });
+        } catch (error) {
+            console.error('Error printing receipt:', error);
+        }
+    };
+
+    const handleShare = async () => {
+        try {
+            const filePath = await generateReceiptHtml(transaction);
+            if (filePath) {
+                await Share.open({
+                    url: `file://${filePath}`,
+                    type: 'application/pdf',
+                    title: 'Transaction Receipt',
+                });
+            }
+        } catch (error) {
+            console.error('Error downloading receipt:', error);
+        }
+    };
     const isReceived = transaction.direction === 'RECEIVED';
 
     // Receipt Dashed Divider Component
@@ -128,6 +154,13 @@ export function TransactionDetail({ transaction, onClose }: Props) {
                     </View>
                 </View>
             </ScrollView>
+            <BottomTabBar
+                activeTab="home"
+                showTransactionActions={true}
+                onPrint={handlePrint}
+                onShare={handleShare}
+                onTabSelect={() => { }}
+            />
         </SafeAreaView>
     );
 }

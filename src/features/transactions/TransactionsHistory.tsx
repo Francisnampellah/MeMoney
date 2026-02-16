@@ -18,12 +18,12 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const { width } = Dimensions.get('window');
 
-interface TransactionsHistoryProps {
-    onTransactionSelect: (transaction: Transaction) => void;
-    onBack: () => void;
-}
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../../navigation/types';
 
-export function TransactionsHistory({ onTransactionSelect, onBack }: TransactionsHistoryProps) {
+export function TransactionsHistory() {
+    const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
     const safeAreaInsets = useSafeAreaInsets();
     const { transactions, loading } = useMpesaSms();
     const [searchQuery, setSearchQuery] = useState('');
@@ -54,7 +54,7 @@ export function TransactionsHistory({ onTransactionSelect, onBack }: Transaction
     const renderItem = ({ item }: { item: Transaction }) => (
         <TouchableOpacity
             style={styles.transactionItem}
-            onPress={() => onTransactionSelect(item)}
+            onPress={() => navigation.navigate('TransactionDetail', { transaction: item })}
             activeOpacity={0.7}
         >
             <View style={styles.iconContainer}>
@@ -86,7 +86,7 @@ export function TransactionsHistory({ onTransactionSelect, onBack }: Transaction
     );
 
     return (
-        <View style={[styles.container, { paddingTop: safeAreaInsets.top }]}>
+        <View style={styles.container}>
 
 
             {/* Search and Filter Section */}

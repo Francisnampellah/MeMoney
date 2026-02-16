@@ -17,12 +17,12 @@ import { useAnalytics } from '../../services/analytics/useAnalytics';
 import { useSmartInsights } from '../../services/ai/useSmartInsights';
 import { abbreviateNumber } from '../../services/analytics/utils';
 
-interface HomeScreenProps {
-    onTransactionSelect: (transaction: Transaction) => void;
-    onViewAll: () => void;
-}
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../../navigation/types';
 
-export function HomeScreen({ onTransactionSelect, onViewAll }: HomeScreenProps) {
+export function HomeScreen() {
+    const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
     const safeAreaInsets = useSafeAreaInsets();
     const { hasPermission, requestPermission, isLoading: isPermissionLoading } = useSmsPermission();
     const { transactions, loading: smsLoading, error, refresh } = useMpesaSms();
@@ -272,7 +272,7 @@ export function HomeScreen({ onTransactionSelect, onViewAll }: HomeScreenProps) 
                         <TouchableOpacity
                             key={item.transaction_id || index}
                             style={styles.balanceItem}
-                            onPress={() => onTransactionSelect(item)}
+                            onPress={() => navigation.navigate('TransactionDetail', { transaction: item })}
                             activeOpacity={0.7}
                         >
                             <View style={styles.balanceItemLeft}>
@@ -298,7 +298,7 @@ export function HomeScreen({ onTransactionSelect, onViewAll }: HomeScreenProps) 
                     {filteredTransactions.length > transactionLimit && (
                         <TouchableOpacity
                             style={styles.viewAllButton}
-                            onPress={onViewAll}
+                            onPress={() => navigation.navigate('Transactions' as any)}
                             activeOpacity={0.7}
                         >
                             <Text style={styles.viewAllText}>View All Transactions</Text>

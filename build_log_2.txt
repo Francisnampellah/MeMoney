@@ -1,0 +1,1048 @@
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+WARNING: The specified Android SDK Build Tools version (31.0.0) is ignored, as it is below the minimum supported version (35.0.0) for Android Gradle Plugin 8.12.0.
+Android SDK Build Tools 35.0.0 will be used.
+To suppress this warning, remove "buildToolsVersion '31.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+> Task :app:generateAutolinkingNewArchitectureFiles UP-TO-DATE
+> Task :app:generateAutolinkingPackageList UP-TO-DATE
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :app:generateReactNativeEntryPoint UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-async-storage_async-storage:preBuild UP-TO-DATE
+> Task :react-native-print:preBuild UP-TO-DATE
+> Task :react-native-safe-area-context:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-safe-area-context:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+> Task :react-native-share:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-share:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-share:preBuild UP-TO-DATE
+> Task :react-native-svg:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-svg:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-svg:preBuild UP-TO-DATE
+> Task :react-native-vector-icons:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-vector-icons:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-vector-icons:preBuild UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-async-storage_async-storage:preDebugBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-print:preDebugBuild UP-TO-DATE
+> Task :react-native-print:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-safe-area-context:preDebugBuild UP-TO-DATE
+> Task :react-native-safe-area-context:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-share:preDebugBuild UP-TO-DATE
+> Task :react-native-share:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-svg:preDebugBuild UP-TO-DATE
+> Task :react-native-svg:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-vector-icons:preDebugBuild UP-TO-DATE
+> Task :react-native-vector-icons:writeDebugAarMetadata UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugResValues UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:packageDebugResources UP-TO-DATE
+> Task :react-native-print:generateDebugResValues UP-TO-DATE
+> Task :react-native-print:generateDebugResources UP-TO-DATE
+> Task :react-native-print:packageDebugResources UP-TO-DATE
+> Task :react-native-safe-area-context:generateDebugResValues UP-TO-DATE
+> Task :react-native-safe-area-context:generateDebugResources UP-TO-DATE
+> Task :react-native-safe-area-context:packageDebugResources UP-TO-DATE
+> Task :react-native-share:generateDebugResValues UP-TO-DATE
+> Task :react-native-share:generateDebugResources UP-TO-DATE
+> Task :react-native-share:packageDebugResources UP-TO-DATE
+> Task :react-native-svg:generateDebugResValues UP-TO-DATE
+> Task :react-native-svg:generateDebugResources UP-TO-DATE
+> Task :react-native-svg:packageDebugResources UP-TO-DATE
+> Task :react-native-vector-icons:generateDebugResValues UP-TO-DATE
+> Task :react-native-vector-icons:generateDebugResources UP-TO-DATE
+> Task :react-native-vector-icons:packageDebugResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:processDebugManifest UP-TO-DATE
+> Task :react-native-print:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-print:processDebugManifest UP-TO-DATE
+> Task :react-native-safe-area-context:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-safe-area-context:processDebugManifest UP-TO-DATE
+> Task :react-native-share:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-share:processDebugManifest UP-TO-DATE
+> Task :react-native-svg:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-svg:processDebugManifest UP-TO-DATE
+> Task :react-native-vector-icons:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-vector-icons:processDebugManifest UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :react-native-async-storage_async-storage:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugRFile UP-TO-DATE
+> Task :react-native-print:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-print:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-print:generateDebugRFile UP-TO-DATE
+> Task :react-native-safe-area-context:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-safe-area-context:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-safe-area-context:generateDebugRFile UP-TO-DATE
+> Task :react-native-share:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-share:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-share:generateDebugRFile UP-TO-DATE
+> Task :react-native-svg:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-svg:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-svg:generateDebugRFile UP-TO-DATE
+> Task :react-native-vector-icons:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-vector-icons:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-vector-icons:generateDebugRFile UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-async-storage_async-storage:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-async-storage_async-storage:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native-print:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-print:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-print:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-print:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-safe-area-context:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-safe-area-context:compileDebugKotlin UP-TO-DATE
+> Task :react-native-safe-area-context:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-safe-area-context:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-safe-area-context:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native-share:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-share:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-share:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-share:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native-svg:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-svg:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-svg:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-svg:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native-vector-icons:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-vector-icons:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-vector-icons:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-vector-icons:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:copyReactNativeVectorIconFonts UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :react-native-async-storage_async-storage:mergeDebugShaders UP-TO-DATE
+> Task :react-native-async-storage_async-storage:compileDebugShaders NO-SOURCE
+> Task :react-native-async-storage_async-storage:generateDebugAssets UP-TO-DATE
+> Task :react-native-async-storage_async-storage:mergeDebugAssets UP-TO-DATE
+> Task :react-native-print:mergeDebugShaders UP-TO-DATE
+> Task :react-native-print:compileDebugShaders NO-SOURCE
+> Task :react-native-print:generateDebugAssets UP-TO-DATE
+> Task :react-native-print:mergeDebugAssets UP-TO-DATE
+> Task :react-native-safe-area-context:mergeDebugShaders UP-TO-DATE
+> Task :react-native-safe-area-context:compileDebugShaders NO-SOURCE
+> Task :react-native-safe-area-context:generateDebugAssets UP-TO-DATE
+> Task :react-native-safe-area-context:mergeDebugAssets UP-TO-DATE
+> Task :react-native-share:mergeDebugShaders UP-TO-DATE
+> Task :react-native-share:compileDebugShaders NO-SOURCE
+> Task :react-native-share:generateDebugAssets UP-TO-DATE
+> Task :react-native-share:mergeDebugAssets UP-TO-DATE
+> Task :react-native-svg:mergeDebugShaders UP-TO-DATE
+> Task :react-native-svg:compileDebugShaders NO-SOURCE
+> Task :react-native-svg:generateDebugAssets UP-TO-DATE
+> Task :react-native-svg:mergeDebugAssets UP-TO-DATE
+> Task :react-native-vector-icons:mergeDebugShaders UP-TO-DATE
+> Task :react-native-vector-icons:compileDebugShaders NO-SOURCE
+> Task :react-native-vector-icons:generateDebugAssets UP-TO-DATE
+> Task :react-native-vector-icons:mergeDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :react-native-safe-area-context:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :react-native-print:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :react-native-share:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :react-native-svg:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :react-native-vector-icons:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :react-native-async-storage_async-storage:processDebugJavaRes NO-SOURCE
+> Task :react-native-print:processDebugJavaRes NO-SOURCE
+> Task :react-native-safe-area-context:processDebugJavaRes UP-TO-DATE
+> Task :react-native-share:processDebugJavaRes NO-SOURCE
+> Task :react-native-svg:processDebugJavaRes NO-SOURCE
+> Task :react-native-vector-icons:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :react-native-safe-area-context:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :react-native-print:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :react-native-share:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :react-native-svg:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :react-native-vector-icons:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :app:configureCMakeDebug[arm64-v8a]
+> Task :app:mergeLibDexDebug
+> Task :app:buildCMakeDebug[arm64-v8a]
+
+> Task :app:compileDebugKotlin
+w: file:///C:/Users/nampellah/Documents/MeMoney/android/app/src/main/java/com/memoney/sms/SmsReaderPackage.kt:9:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+
+> Task :app:configureCMakeDebug[armeabi-v7a]
+> Task :app:compileDebugJavaWithJavac
+> Task :app:dexBuilderDebug
+> Task :app:processDebugJavaRes
+> Task :app:mergeDebugGlobalSynthetics
+> Task :app:mergeProjectDexDebug
+> Task :app:mergeDebugJavaResource
+> Task :app:buildCMakeDebug[armeabi-v7a]
+> Task :app:configureCMakeDebug[x86]
+> Task :app:buildCMakeDebug[x86]
+C/C++: ninja: Entering directory `C:\Users\nampellah\Documents\MeMoney\android\app\.cxx\Debug\h5d39245\x86'
+C/C++: C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DRN_SERIALIZABLE_STATE -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/States.cpp.o -MF RNVectorIconsSpec_autolinked_build\CMakeFiles\react_codegen_RNVectorIconsSpec.dir\react\renderer\components\RNVectorIconsSpec\States.cpp.o.d -o RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/States.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/States.cpp
+C/C++: 0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DRN_SERIALIZABLE_STATE -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/States.cpp.o -MF RNVectorIconsSpec_autolinked_build\\CMakeFiles\\react_codegen_RNVectorIconsSpec.dir\\react\\renderer\\components\\RNVectorIconsSpec\\States.cpp.o.d -o RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/States.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/States.cpp
+C/C++: clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+C/C++: Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+C/C++: Target: i686-none-linux-android24
+C/C++: Thread model: posix
+C/C++: InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+C/C++: Preprocessed source(s) and associated run script(s) are located at:
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/States-967f05.cpp
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/States-967f05.sh
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: [32/41] Building CXX object RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/Props.cpp.o
+C/C++: FAILED: RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/Props.cpp.o 
+C/C++: C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DRN_SERIALIZABLE_STATE -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/Props.cpp.o -MF RNVectorIconsSpec_autolinked_build\CMakeFiles\react_codegen_RNVectorIconsSpec.dir\react\renderer\components\RNVectorIconsSpec\Props.cpp.o.d -o RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/Props.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/Props.cpp
+C/C++: 0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DRN_SERIALIZABLE_STATE -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/Props.cpp.o -MF RNVectorIconsSpec_autolinked_build\\CMakeFiles\\react_codegen_RNVectorIconsSpec.dir\\react\\renderer\\components\\RNVectorIconsSpec\\Props.cpp.o.d -o RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/Props.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/Props.cpp
+C/C++: clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+C/C++: Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+C/C++: Target: i686-none-linux-android24
+C/C++: Thread model: posix
+C/C++: InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+C/C++: Preprocessed source(s) and associated run script(s) are located at:
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/Props-b0c2c7.cpp
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/Props-b0c2c7.sh
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: [33/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o
+C/C++: FAILED: rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o 
+C/C++: C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o -MF rnsvg_autolinked_build\CMakeFiles\react_codegen_rnsvg.dir\5c197eee0e7fb40c78a1d5f8a06fb9e7\build\generated\source\codegen\jni\react\renderer\components\rnsvg\Props.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp
+C/C++: 0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o -MF rnsvg_autolinked_build\\CMakeFiles\\react_codegen_rnsvg.dir\\5c197eee0e7fb40c78a1d5f8a06fb9e7\\build\\generated\\source\\codegen\\jni\\react\\renderer\\components\\rnsvg\\Props.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp
+C/C++: clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+C/C++: Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+C/C++: Target: i686-none-linux-android24
+C/C++: Thread model: posix
+C/C++: InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+C/C++: Preprocessed source(s) and associated run script(s) are located at:
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/Props-5b4af7.cpp
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/Props-5b4af7.sh
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: [34/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o
+C/C++: FAILED: rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o 
+C/C++: C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o -MF rnsvg_autolinked_build\CMakeFiles\react_codegen_rnsvg.dir\5c197eee0e7fb40c78a1d5f8a06fb9e7\build\generated\source\codegen\jni\react\renderer\components\rnsvg\ShadowNodes.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp
+C/C++: 0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o -MF rnsvg_autolinked_build\\CMakeFiles\\react_codegen_rnsvg.dir\\5c197eee0e7fb40c78a1d5f8a06fb9e7\\build\\generated\\source\\codegen\\jni\\react\\renderer\\components\\rnsvg\\ShadowNodes.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp
+C/C++: clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+C/C++: Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+C/C++: Target: i686-none-linux-android24
+C/C++: Thread model: posix
+C/C++: InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+C/C++: Preprocessed source(s) and associated run script(s) are located at:
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/ShadowNodes-674b34.cpp
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/ShadowNodes-674b34.sh
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: [35/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/a81619a3cd418494c576e8e06b766980/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o
+C/C++: FAILED: rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/a81619a3cd418494c576e8e06b766980/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o 
+C/C++: C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/a81619a3cd418494c576e8e06b766980/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o -MF rnsvg_autolinked_build\CMakeFiles\react_codegen_rnsvg.dir\a81619a3cd418494c576e8e06b766980\source\codegen\jni\react\renderer\components\rnsvg\ComponentDescriptors.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/a81619a3cd418494c576e8e06b766980/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp
+C/C++: 0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/a81619a3cd418494c576e8e06b766980/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o -MF rnsvg_autolinked_build\\CMakeFiles\\react_codegen_rnsvg.dir\\a81619a3cd418494c576e8e06b766980\\source\\codegen\\jni\\react\\renderer\\components\\rnsvg\\ComponentDescriptors.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/a81619a3cd418494c576e8e06b766980/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp
+C/C++: clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+C/C++: Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+C/C++: Target: i686-none-linux-android24
+C/C++: Thread model: posix
+C/C++: InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+C/C++: Preprocessed source(s) and associated run script(s) are located at:
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/ComponentDescriptors-45e28c.cpp
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/ComponentDescriptors-45e28c.sh
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: [36/41] Building CXX object RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/EventEmitters.cpp.o
+C/C++: [37/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o
+C/C++: FAILED: rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o 
+C/C++: C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o -MF rnsvg_autolinked_build\CMakeFiles\react_codegen_rnsvg.dir\rnsvg.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/rnsvg.cpp
+C/C++: 0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o -MF rnsvg_autolinked_build\\CMakeFiles\\react_codegen_rnsvg.dir\\rnsvg.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/rnsvg.cpp
+C/C++: clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+C/C++: Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+C/C++: Target: i686-none-linux-android24
+C/C++: Thread model: posix
+C/C++: InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+C/C++: Preprocessed source(s) and associated run script(s) are located at:
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/rnsvg-135f83.cpp
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/rnsvg-135f83.sh
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: [38/41] Building CXX object CMakeFiles/appmodules.dir/C_/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o
+C/C++: FAILED: CMakeFiles/appmodules.dir/C_/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o 
+C/C++: C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DRN_SERIALIZABLE_STATE -Dappmodules_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup -IC:/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/react/renderer/components/rnasyncstorage -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/safeareacontext -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-share/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-share/android/build/generated/source/codegen/jni/react/renderer/components/RNShareSpec -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT CMakeFiles/appmodules.dir/C_/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -MF CMakeFiles\appmodules.dir\C_\Users\nampellah\Documents\MeMoney\android\app\build\generated\autolinking\src\main\jni\autolinking.cpp.o.d -o CMakeFiles/appmodules.dir/C_/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -c C:/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp
+C/C++: 0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DRN_SERIALIZABLE_STATE -Dappmodules_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup -IC:/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/react/renderer/components/rnasyncstorage -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/safeareacontext -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-share/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-share/android/build/generated/source/codegen/jni/react/renderer/components/RNShareSpec -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT CMakeFiles/appmodules.dir/C_/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -MF CMakeFiles\\appmodules.dir\\C_\\Users\\nampellah\\Documents\\MeMoney\\android\\app\\build\\generated\\autolinking\\src\\main\\jni\\autolinking.cpp.o.d -o CMakeFiles/appmodules.dir/C_/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -c C:/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp
+C/C++: clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+C/C++: Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+C/C++: Target: i686-none-linux-android24
+C/C++: Thread model: posix
+C/C++: InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+C/C++: Preprocessed source(s) and associated run script(s) are located at:
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/autolinking-0b989c.cpp
+C/C++: clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/autolinking-0b989c.sh
+C/C++: clang++: note: diagnostic msg: 
+C/C++: ********************
+C/C++: [39/41] Building CXX object RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/ShadowNodes.cpp.o
+C/C++: ninja: build stopped: subcommand failed.
+
+> Task :app:buildCMakeDebug[x86] FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/nampellah/Documents/MeMoney/android/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:buildCMakeDebug[x86]'.
+> com.android.ide.common.process.ProcessException: ninja: Entering directory `C:\Users\nampellah\Documents\MeMoney\android\app\.cxx\Debug\h5d39245\x86'
+  [0/2] Re-checking globbed directories...
+  [1/41] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/States.cpp.o
+  [2/41] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/EventEmitters.cpp.o
+  [3/41] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/rnasyncstorage-generated.cpp.o
+  [4/41] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/3dc4820daf50d2d21273b6237b77a4c5/react/renderer/components/safeareacontext/EventEmitters.cpp.o
+  [5/41] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/ComponentDescriptors.cpp.o
+  [6/41] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/b8c3b900b8c51576b1e78cfdd39ed3d7/renderer/components/safeareacontext/RNCSafeAreaViewState.cpp.o
+  [7/41] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/Props.cpp.o
+  [8/41] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/ShadowNodes.cpp.o
+  [9/41] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/c3be0e871f9635d873ef44f06110d879/components/safeareacontext/RNCSafeAreaViewShadowNode.cpp.o
+  [10/41] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/50eace137ada53227e66d8c49b844f78/jni/react/renderer/components/safeareacontext/States.cpp.o
+  [11/41] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/1468055f067ff1850590b18b510f2683/renderer/components/safeareacontext/ComponentDescriptors.cpp.o
+  [12/41] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/50eace137ada53227e66d8c49b844f78/jni/react/renderer/components/safeareacontext/Props.cpp.o
+  [13/41] Building CXX object RNShareSpec_autolinked_build/CMakeFiles/react_codegen_RNShareSpec.dir/react/renderer/components/RNShareSpec/States.cpp.o
+  [14/41] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/09ace3fba838ebd8d8adb1318a861b03/generated/source/codegen/jni/safeareacontext-generated.cpp.o
+  [15/41] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/50eace137ada53227e66d8c49b844f78/jni/react/renderer/components/safeareacontext/ShadowNodes.cpp.o
+  [16/41] Linking CXX shared library C:\Users\nampellah\Documents\MeMoney\android\app\build\intermediates\cxx\Debug\h5d39245\obj\x86\libreact_codegen_safeareacontext.so
+  [17/41] Building CXX object RNShareSpec_autolinked_build/CMakeFiles/react_codegen_RNShareSpec.dir/react/renderer/components/RNShareSpec/ShadowNodes.cpp.o
+  [18/41] Building CXX object RNShareSpec_autolinked_build/CMakeFiles/react_codegen_RNShareSpec.dir/RNShareSpec-generated.cpp.o
+  [19/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/dff7d4bcd5de7243318343c18f2131a9/common/cpp/react/renderer/components/rnsvg/RNSVGLayoutableShadowNode.cpp.o
+  [20/41] Building CXX object RNShareSpec_autolinked_build/CMakeFiles/react_codegen_RNShareSpec.dir/react/renderer/components/RNShareSpec/EventEmitters.cpp.o
+  [21/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/dff7d4bcd5de7243318343c18f2131a9/common/cpp/react/renderer/components/rnsvg/RNSVGImageShadowNode.cpp.o
+  [22/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/c3d08ca551cf28751238061abb0c3a6c/react-native-svg/common/cpp/react/renderer/components/rnsvg/RNSVGImageState.cpp.o
+  [23/41] Building CXX object RNShareSpec_autolinked_build/CMakeFiles/react_codegen_RNShareSpec.dir/react/renderer/components/RNShareSpec/Props.cpp.o
+  [24/41] Building CXX object RNShareSpec_autolinked_build/CMakeFiles/react_codegen_RNShareSpec.dir/react/renderer/components/RNShareSpec/ComponentDescriptors.cpp.o
+  [25/41] Building CXX object CMakeFiles/appmodules.dir/OnLoad.cpp.o
+  [26/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/c3d08ca551cf28751238061abb0c3a6c/react-native-svg/common/cpp/react/renderer/components/rnsvg/RNSVGShadowNodes.cpp.o
+  [27/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/States.cpp.o
+  [28/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/490c23be2431d4be35b07ac44f73d572/generated/source/codegen/jni/react/renderer/components/rnsvg/EventEmitters.cpp.o
+  [29/41] Building CXX object RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/RNVectorIconsSpec-generated.cpp.o
+  [30/41] Building CXX object RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/ComponentDescriptors.cpp.o
+  [31/41] Building CXX object RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/States.cpp.o
+  FAILED: RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/States.cpp.o 
+  C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DRN_SERIALIZABLE_STATE -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/States.cpp.o -MF RNVectorIconsSpec_autolinked_build\CMakeFiles\react_codegen_RNVectorIconsSpec.dir\react\renderer\components\RNVectorIconsSpec\States.cpp.o.d -o RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/States.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/States.cpp
+  LLVM ERROR: out of memory
+  Allocation failed
+  PLEASE submit a bug report to https://github.com/android-ndk/ndk/issues and include the crash backtrace, preprocessed source, and associated run script.
+  Stack dump:
+  0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DRN_SERIALIZABLE_STATE -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/States.cpp.o -MF RNVectorIconsSpec_autolinked_build\\CMakeFiles\\react_codegen_RNVectorIconsSpec.dir\\react\\renderer\\components\\RNVectorIconsSpec\\States.cpp.o.d -o RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/States.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/States.cpp
+  1.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__algorithm/stable_sort.h:105:89: current parser token ','
+  2.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__algorithm/stable_sort.h:32:1 <Spelling=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__config:825:39>: parsing namespace 'std'
+  3.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__algorithm/stable_sort.h:32:1 <Spelling=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__config:826:39>: parsing namespace 'std::__ndk1'
+  Exception Code: 0xC000001D
+   #0 0x00007ff73fa89d76 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x639d76)
+   #1 0x00007ff875ed1989 (C:\WINDOWS\System32\ucrtbase.dll+0xc1989)
+   #2 0x00007ff875eb4ab1 (C:\WINDOWS\System32\ucrtbase.dll+0xa4ab1)
+   #3 0x00007ff73fa4c92b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5fc92b)
+   #4 0x00007ff73fa4c942 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5fc942)
+   #5 0x00007ff73f4577b9 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x77b9)
+   #6 0x00007ff7409e470b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x159470b)
+   #7 0x00007ff741f5ad6f (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x2b0ad6f)
+   #8 0x00007ff743dbc516 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x496c516)
+   #9 0x00007ff744b2daa6 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x56ddaa6)
+  #10 0x00007ff744b2a93f (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x56da93f)
+  #11 0x00007ff744b2a5a8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x56da5a8)
+  #12 0x00007ff744b91881 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5741881)
+  #13 0x00007ff7441cf18b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4d7f18b)
+  #14 0x00007ff744b67a7e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5717a7e)
+  #15 0x00007ff744b672ef (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x57172ef)
+  #16 0x00007ff744b91cc4 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5741cc4)
+  #17 0x00007ff7441cf18b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4d7f18b)
+  #18 0x00007ff744b67a7e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5717a7e)
+  #19 0x00007ff744b672ef (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x57172ef)
+  #20 0x00007ff744b91cc4 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5741cc4)
+  #21 0x00007ff7441cf18b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4d7f18b)
+  #22 0x00007ff7441cd66a (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4d7d66a)
+  #23 0x00007ff742c436de (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x37f36de)
+  #24 0x00007ff740da916e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x195916e)
+  #25 0x00007ff73fb6d000 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x71d000)
+  #26 0x00007ff73fc03c05 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x7b3c05)
+  #27 0x00007ff73f58e070 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13e070)
+  #28 0x00007ff73f58b180 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13b180)
+  #29 0x00007ff740b2a27d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16da27d)
+  #30 0x00007ff73fa4affd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5faffd)
+  #31 0x00007ff740b29ca5 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16d9ca5)
+  #32 0x00007ff73fb1c463 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6cc463)
+  #33 0x00007ff73fb3f96d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6ef96d)
+  #34 0x00007ff73f58a2e2 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13a2e2)
+  #35 0x00007ff73f59b027 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14b027)
+  #36 0x00007ff73f451395 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1395)
+  #37 0x00007ff73f4514c8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14c8)
+  #38 0x00007ff877f0e8d7 (C:\WINDOWS\System32\KERNEL32.DLL+0x2e8d7)
+  #39 0x00007ff878c2c40c (C:\WINDOWS\SYSTEM32\ntdll.dll+0x8c40c)
+  clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+  Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+  Target: i686-none-linux-android24
+  Thread model: posix
+  InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+  clang++: note: diagnostic msg: 
+  ********************
+  
+  PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+  Preprocessed source(s) and associated run script(s) are located at:
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/States-967f05.cpp
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/States-967f05.sh
+  clang++: note: diagnostic msg: 
+  
+  ********************
+  [32/41] Building CXX object RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/Props.cpp.o
+  FAILED: RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/Props.cpp.o 
+  C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DRN_SERIALIZABLE_STATE -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/Props.cpp.o -MF RNVectorIconsSpec_autolinked_build\CMakeFiles\react_codegen_RNVectorIconsSpec.dir\react\renderer\components\RNVectorIconsSpec\Props.cpp.o.d -o RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/Props.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/Props.cpp
+  LLVM ERROR: out of memory
+  Allocation failed
+  PLEASE submit a bug report to https://github.com/android-ndk/ndk/issues and include the crash backtrace, preprocessed source, and associated run script.
+  Stack dump:
+  0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DRN_SERIALIZABLE_STATE -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/Props.cpp.o -MF RNVectorIconsSpec_autolinked_build\\CMakeFiles\\react_codegen_RNVectorIconsSpec.dir\\react\\renderer\\components\\RNVectorIconsSpec\\Props.cpp.o.d -o RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/Props.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/Props.cpp
+  1.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__format/format_args.h:35:3 <Spelling=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__config:798:38>: current parser token '_LIBCPP_TOSTRING'
+  2.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__format/format_args.h:25:1 <Spelling=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__config:825:39>: parsing namespace 'std'
+  3.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__format/format_args.h:25:1 <Spelling=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__config:826:39>: parsing namespace 'std::__ndk1'
+  4.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__format/format_args.h:30:1: parsing struct/union/class body 'std::basic_format_args'
+  Exception Code: 0xC000001D
+   #0 0x00007ff73fa89d76 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x639d76)
+   #1 0x00007ff875ed1989 (C:\WINDOWS\System32\ucrtbase.dll+0xc1989)
+   #2 0x00007ff875eb4ab1 (C:\WINDOWS\System32\ucrtbase.dll+0xa4ab1)
+   #3 0x00007ff73fa4c92b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5fc92b)
+   #4 0x00007ff73fa597ff (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6097ff)
+   #5 0x00007ff7408df16b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x148f16b)
+   #6 0x00007ff74238ad83 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x2f3ad83)
+   #7 0x00007ff74237949d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x2f2949d)
+   #8 0x00007ff740df88d4 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x19a88d4)
+   #9 0x00007ff740c9de41 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x184de41)
+  #10 0x00007ff740c9de9c (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x184de9c)
+  #11 0x00007ff744b85b48 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5735b48)
+  #12 0x00007ff744b8560d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x573560d)
+  #13 0x00007ff744b8477e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x573477e)
+  #14 0x00007ff744b99393 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5749393)
+  #15 0x00007ff744b782b3 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x57282b3)
+  #16 0x00007ff744b2e081 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x56de081)
+  #17 0x00007ff744b2ad79 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x56dad79)
+  #18 0x00007ff744b7799f (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x572799f)
+  #19 0x00007ff744b7b12a (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x572b12a)
+  #20 0x00007ff744b7278c (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x572278c)
+  #21 0x00007ff744b98ecb (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5748ecb)
+  #22 0x00007ff744b2e4d3 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x56de4d3)
+  #23 0x00007ff744b2ad79 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x56dad79)
+  #24 0x00007ff744b2a5a8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x56da5a8)
+  #25 0x00007ff744b91881 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5741881)
+  #26 0x00007ff7441cf18b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4d7f18b)
+  #27 0x00007ff744b67a7e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5717a7e)
+  #28 0x00007ff744b672ef (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x57172ef)
+  #29 0x00007ff744b91cc4 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5741cc4)
+  #30 0x00007ff7441cf18b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4d7f18b)
+  #31 0x00007ff744b67a7e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5717a7e)
+  #32 0x00007ff744b672ef (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x57172ef)
+  #33 0x00007ff744b91cc4 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5741cc4)
+  #34 0x00007ff7441cf18b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4d7f18b)
+  #35 0x00007ff7441cd66a (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4d7d66a)
+  #36 0x00007ff742c436de (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x37f36de)
+  #37 0x00007ff740da916e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x195916e)
+  #38 0x00007ff73fb6d000 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x71d000)
+  #39 0x00007ff73fc03c05 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x7b3c05)
+  #40 0x00007ff73f58e070 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13e070)
+  #41 0x00007ff73f58b180 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13b180)
+  #42 0x00007ff740b2a27d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16da27d)
+  #43 0x00007ff73fa4affd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5faffd)
+  #44 0x00007ff740b29ca5 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16d9ca5)
+  #45 0x00007ff73fb1c463 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6cc463)
+  #46 0x00007ff73fb3f96d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6ef96d)
+  #47 0x00007ff73f58a2e2 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13a2e2)
+  #48 0x00007ff73f59b027 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14b027)
+  #49 0x00007ff73f451395 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1395)
+  #50 0x00007ff73f4514c8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14c8)
+  #51 0x00007ff877f0e8d7 (C:\WINDOWS\System32\KERNEL32.DLL+0x2e8d7)
+  #52 0x00007ff878c2c40c (C:\WINDOWS\SYSTEM32\ntdll.dll+0x8c40c)
+  clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+  Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+  Target: i686-none-linux-android24
+  Thread model: posix
+  InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+  clang++: note: diagnostic msg: 
+  ********************
+  
+  PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+  Preprocessed source(s) and associated run script(s) are located at:
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/Props-b0c2c7.cpp
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/Props-b0c2c7.sh
+  clang++: note: diagnostic msg: 
+  
+  ********************
+  [33/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o
+  FAILED: rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o 
+  C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o -MF rnsvg_autolinked_build\CMakeFiles\react_codegen_rnsvg.dir\5c197eee0e7fb40c78a1d5f8a06fb9e7\build\generated\source\codegen\jni\react\renderer\components\rnsvg\Props.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp
+  LLVM ERROR: out of memory
+  Allocation failed
+  PLEASE submit a bug report to https://github.com/android-ndk/ndk/issues and include the crash backtrace, preprocessed source, and associated run script.
+  Stack dump:
+  0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o -MF rnsvg_autolinked_build\\CMakeFiles\\react_codegen_rnsvg.dir\\5c197eee0e7fb40c78a1d5f8a06fb9e7\\build\\generated\\source\\codegen\\jni\\react\\renderer\\components\\rnsvg\\Props.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp
+  1.	<eof> parser at end of file
+  2.	C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include/react/renderer/core/RawValue.h:119:12: instantiating function definition 'facebook::react::RawValue::operator unordered_map<std::unordered_map<std::string, std::vector<std::string>>>'
+  3.	C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include/react/renderer/core/RawValue.h:479:45: instantiating function definition 'facebook::react::RawValue::castValue<std::vector<std::string>>'
+  4.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/unordered_map:1088:25: instantiating function definition 'std::unordered_map<std::string, std::vector<std::string>>::unordered_map'
+  5.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__hash_table:1070:43: instantiating function definition 'std::__hash_table<std::__hash_value_type<std::string, std::vector<std::string>>, std::__unordered_map_hasher<std::string, std::__hash_value_type<std::string, std::vector<std::string>>, std::hash<std::string>, std::equal_to<std::string>>, std::__unordered_map_equal<std::string, std::__hash_value_type<std::string, std::vector<std::string>>, std::equal_to<std::string>, std::hash<std::string>>, std::allocator<std::__hash_value_type<std::string, std::vector<std::string>>>>::~__hash_table'
+  6.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__hash_table:1103:48: instantiating function definition 'std::__hash_table<std::__hash_value_type<std::string, std::vector<std::string>>, std::__unordered_map_hasher<std::string, std::__hash_value_type<std::string, std::vector<std::string>>, std::hash<std::string>, std::equal_to<std::string>>, std::__unordered_map_equal<std::string, std::__hash_value_type<std::string, std::vector<std::string>>, std::equal_to<std::string>, std::hash<std::string>>, std::allocator<std::__hash_value_type<std::string, std::vector<std::string>>>>::__deallocate_node'
+  7.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__hash_table:107:8: instantiating class definition 'std::__hash_node<std::__hash_value_type<std::string, std::vector<std::string>>, void *>'
+  8.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__hash_table:119:3: instantiating class definition 'std::__hash_node<std::__hash_value_type<std::string, std::vector<std::string>>, void *>::(anonymous union at C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__hash_table:119:3)'
+  9.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/unordered_map:830:33: instantiating class definition 'std::__hash_value_type<std::string, std::vector<std::string>>'
+  10.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__utility/pair.h:149:49: instantiating function definition 'std::pair<const std::string, std::vector<std::string>>::_CheckArgs::__enable_implicit<const std::string &, const std::vector<std::string> &>'
+  11.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__utility/pair.h:149:49: LLVM IR generation of declaration 'std::pair<const std::string, std::vector<std::string>>::_CheckArgs::__enable_implicit'
+  Exception Code: 0xC000001D
+    #0 0x00007ff73fa89d76 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x639d76)
+    #1 0x00007ff875ed1989 (C:\WINDOWS\System32\ucrtbase.dll+0xc1989)
+    #2 0x00007ff875eb4ab1 (C:\WINDOWS\System32\ucrtbase.dll+0xa4ab1)
+    #3 0x00007ff73fa4c92b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5fc92b)
+    #4 0x00007ff73fa597ff (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6097ff)
+    #5 0x00007ff7408f8f45 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14a8f45)
+    #6 0x00007ff7408ebceb (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x149bceb)
+    #7 0x00007ff74090cac8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14bcac8)
+    #8 0x00007ff74090177a (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14b177a)
+    #9 0x00007ff742d9a5fc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x394a5fc)
+   #10 0x00007ff740e6c6f5 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1a1c6f5)
+   #11 0x00007ff7427f11c3 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11c3)
+   #12 0x00007ff742af6007 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36a6007)
+   #13 0x00007ff7429f30df (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x35a30df)
+   #14 0x00007ff7429f8a61 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x35a8a61)
+   #15 0x00007ff7429af43b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x355f43b)
+   #16 0x00007ff7429aee44 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x355ee44)
+   #17 0x00007ff742980471 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x3530471)
+   #18 0x00007ff7429822ff (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x35322ff)
+   #19 0x00007ff7429821e9 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x35321e9)
+   #20 0x00007ff7429a7a79 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x3557a79)
+   #21 0x00007ff7429c99c2 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x35799c2)
+   #22 0x00007ff742921a7e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34d1a7e)
+   #23 0x00007ff74292def4 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34ddef4)
+   #24 0x00007ff74292d1dc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34dd1dc)
+   #25 0x00007ff74293f0f4 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34ef0f4)
+   #26 0x00007ff7429109e6 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c09e6)
+   #27 0x00007ff74293c7a4 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34ec7a4)
+   #28 0x00007ff742910cdc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c0cdc)
+   #29 0x00007ff7429104c8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c04c8)
+   #30 0x00007ff74291111e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c111e)
+   #31 0x00007ff743dd5f68 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4985f68)
+   #32 0x00007ff743eae49e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4a5e49e)
+   #33 0x00007ff743eb0b0d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4a60b0d)
+   #34 0x00007ff74296db73 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x351db73)
+   #35 0x00007ff74283bc4c (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33ebc4c)
+   #36 0x00007ff742728998 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x32d8998)
+   #37 0x00007ff74272a499 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x32da499)
+   #38 0x00007ff742729e95 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x32d9e95)
+   #39 0x00007ff742720348 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x32d0348)
+   #40 0x00007ff74271de4d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x32cde4d)
+   #41 0x00007ff742914e32 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c4e32)
+   #42 0x00007ff7429170fc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c70fc)
+   #43 0x00007ff742b5c671 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x370c671)
+   #44 0x00007ff740d87a92 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1937a92)
+   #45 0x00007ff742b447dd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f47dd)
+   #46 0x00007ff742b43cfc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f3cfc)
+   #47 0x00007ff742520e97 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x30d0e97)
+   #48 0x00007ff7427dccb7 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338ccb7)
+   #49 0x00007ff742914c4d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c4c4d)
+   #50 0x00007ff742b5c711 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x370c711)
+   #51 0x00007ff740d87a92 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1937a92)
+   #52 0x00007ff742b447dd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f47dd)
+   #53 0x00007ff742b43cfc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f3cfc)
+   #54 0x00007ff742520e97 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x30d0e97)
+   #55 0x00007ff7427dccb7 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338ccb7)
+   #56 0x00007ff742914c4d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c4c4d)
+   #57 0x00007ff7429170fc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c70fc)
+   #58 0x00007ff742b5c671 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x370c671)
+   #59 0x00007ff740d87a92 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1937a92)
+   #60 0x00007ff742b447dd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f47dd)
+   #61 0x00007ff742b43cfc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f3cfc)
+   #62 0x00007ff7428754d8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34254d8)
+   #63 0x00007ff74291e506 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34ce506)
+   #64 0x00007ff742921876 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34d1876)
+   #65 0x00007ff7429196d8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c96d8)
+   #66 0x00007ff7429218e1 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34d18e1)
+   #67 0x00007ff7429196d8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c96d8)
+   #68 0x00007ff7429218e1 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34d18e1)
+   #69 0x00007ff742917cd7 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c7cd7)
+   #70 0x00007ff7429381aa (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34e81aa)
+   #71 0x00007ff7429467d5 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34f67d5)
+   #72 0x00007ff7429381aa (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34e81aa)
+   #73 0x00007ff742917c77 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c7c77)
+   #74 0x00007ff7427f109d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a109d)
+   #75 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+   #76 0x00007ff7427f11ec (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11ec)
+   #77 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+   #78 0x00007ff7427f11ec (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11ec)
+   #79 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+   #80 0x00007ff7427f11ec (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11ec)
+   #81 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+   #82 0x00007ff7427f11ec (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11ec)
+   #83 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+   #84 0x00007ff740d8b252 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x193b252)
+   #85 0x00007ff740d8ba26 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x193ba26)
+   #86 0x00007ff7441cd824 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4d7d824)
+   #87 0x00007ff742c436de (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x37f36de)
+   #88 0x00007ff740da916e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x195916e)
+   #89 0x00007ff73fb6d000 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x71d000)
+   #90 0x00007ff73fc03c05 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x7b3c05)
+   #91 0x00007ff73f58e070 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13e070)
+   #92 0x00007ff73f58b180 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13b180)
+   #93 0x00007ff740b2a27d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16da27d)
+   #94 0x00007ff73fa4affd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5faffd)
+   #95 0x00007ff740b29ca5 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16d9ca5)
+   #96 0x00007ff73fb1c463 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6cc463)
+   #97 0x00007ff73fb3f96d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6ef96d)
+   #98 0x00007ff73f58a2e2 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13a2e2)
+   #99 0x00007ff73f59b027 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14b027)
+  #100 0x00007ff73f451395 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1395)
+  #101 0x00007ff73f4514c8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14c8)
+  #102 0x00007ff877f0e8d7 (C:\WINDOWS\System32\KERNEL32.DLL+0x2e8d7)
+  #103 0x00007ff878c2c40c (C:\WINDOWS\SYSTEM32\ntdll.dll+0x8c40c)
+  clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+  Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+  Target: i686-none-linux-android24
+  Thread model: posix
+  InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+  clang++: note: diagnostic msg: 
+  ********************
+  
+  PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+  Preprocessed source(s) and associated run script(s) are located at:
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/Props-5b4af7.cpp
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/Props-5b4af7.sh
+  clang++: note: diagnostic msg: 
+  
+  ********************
+  [34/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o
+  FAILED: rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o 
+  C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o -MF rnsvg_autolinked_build\CMakeFiles\react_codegen_rnsvg.dir\5c197eee0e7fb40c78a1d5f8a06fb9e7\build\generated\source\codegen\jni\react\renderer\components\rnsvg\ShadowNodes.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp
+  LLVM ERROR: out of memory
+  Allocation failed
+  PLEASE submit a bug report to https://github.com/android-ndk/ndk/issues and include the crash backtrace, preprocessed source, and associated run script.
+  Stack dump:
+  0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o -MF rnsvg_autolinked_build\\CMakeFiles\\react_codegen_rnsvg.dir\\5c197eee0e7fb40c78a1d5f8a06fb9e7\\build\\generated\\source\\codegen\\jni\\react\\renderer\\components\\rnsvg\\ShadowNodes.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/5c197eee0e7fb40c78a1d5f8a06fb9e7/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp
+  1.	<eof> parser at end of file
+  2.	C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include/react/renderer/core/RawValue.h:144:8: instantiating function definition 'facebook::react::RawValue::hasType<std::unordered_map<std::string, std::vector<std::string>>>'
+  Exception Code: 0xC000001D
+   #0 0x00007ff73fa89d76 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x639d76)
+   #1 0x00007ff875ed1989 (C:\WINDOWS\System32\ucrtbase.dll+0xc1989)
+   #2 0x00007ff875eb4ab1 (C:\WINDOWS\System32\ucrtbase.dll+0xa4ab1)
+   #3 0x00007ff73fa4c92b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5fc92b)
+   #4 0x00007ff73fa4c942 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5fc942)
+   #5 0x00007ff73f4577b9 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x77b9)
+   #6 0x00007ff73f7c4f9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x374f9e)
+   #7 0x00007ff7429110e0 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c10e0)
+   #8 0x00007ff743ead362 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4a5d362)
+   #9 0x00007ff743eb039c (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4a6039c)
+  #10 0x00007ff74296db73 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x351db73)
+  #11 0x00007ff742975ff0 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x3525ff0)
+  #12 0x00007ff742981af5 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x3531af5)
+  #13 0x00007ff742981d2e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x3531d2e)
+  #14 0x00007ff7429820e5 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x35320e5)
+  #15 0x00007ff7429a7a79 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x3557a79)
+  #16 0x00007ff74270223e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x32b223e)
+  #17 0x00007ff74250dda0 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x30bdda0)
+  #18 0x00007ff74250bd22 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x30bbd22)
+  #19 0x00007ff7427ed44a (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x339d44a)
+  #20 0x00007ff7427dc8b7 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338c8b7)
+  #21 0x00007ff7427dba5d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338ba5d)
+  #22 0x00007ff7427db577 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338b577)
+  #23 0x00007ff7427ef1f6 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x339f1f6)
+  #24 0x00007ff742942d5a (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34f2d5a)
+  #25 0x00007ff7429381aa (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34e81aa)
+  #26 0x00007ff74294342f (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34f342f)
+  #27 0x00007ff7429381aa (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34e81aa)
+  #28 0x00007ff742917c77 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c7c77)
+  #29 0x00007ff7427f109d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a109d)
+  #30 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+  #31 0x00007ff740d8b252 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x193b252)
+  #32 0x00007ff740d8ba26 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x193ba26)
+  #33 0x00007ff7441cd824 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4d7d824)
+  #34 0x00007ff742c436de (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x37f36de)
+  #35 0x00007ff740da916e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x195916e)
+  #36 0x00007ff73fb6d000 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x71d000)
+  #37 0x00007ff73fc03c05 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x7b3c05)
+  #38 0x00007ff73f58e070 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13e070)
+  #39 0x00007ff73f58b180 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13b180)
+  #40 0x00007ff740b2a27d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16da27d)
+  #41 0x00007ff73fa4affd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5faffd)
+  #42 0x00007ff740b29ca5 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16d9ca5)
+  #43 0x00007ff73fb1c463 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6cc463)
+  #44 0x00007ff73fb3f96d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6ef96d)
+  #45 0x00007ff73f58a2e2 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13a2e2)
+  #46 0x00007ff73f59b027 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14b027)
+  #47 0x00007ff73f451395 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1395)
+  #48 0x00007ff73f4514c8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14c8)
+  #49 0x00007ff877f0e8d7 (C:\WINDOWS\System32\KERNEL32.DLL+0x2e8d7)
+  #50 0x00007ff878c2c40c (C:\WINDOWS\SYSTEM32\ntdll.dll+0x8c40c)
+  clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+  Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+  Target: i686-none-linux-android24
+  Thread model: posix
+  InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+  clang++: note: diagnostic msg: 
+  ********************
+  
+  PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+  Preprocessed source(s) and associated run script(s) are located at:
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/ShadowNodes-674b34.cpp
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/ShadowNodes-674b34.sh
+  clang++: note: diagnostic msg: 
+  
+  ********************
+  [35/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/a81619a3cd418494c576e8e06b766980/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o
+  FAILED: rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/a81619a3cd418494c576e8e06b766980/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o 
+  C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/a81619a3cd418494c576e8e06b766980/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o -MF rnsvg_autolinked_build\CMakeFiles\react_codegen_rnsvg.dir\a81619a3cd418494c576e8e06b766980\source\codegen\jni\react\renderer\components\rnsvg\ComponentDescriptors.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/a81619a3cd418494c576e8e06b766980/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp
+  LLVM ERROR: out of memory
+  Allocation failed
+  PLEASE submit a bug report to https://github.com/android-ndk/ndk/issues and include the crash backtrace, preprocessed source, and associated run script.
+  Stack dump:
+  0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/a81619a3cd418494c576e8e06b766980/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o -MF rnsvg_autolinked_build\\CMakeFiles\\react_codegen_rnsvg.dir\\a81619a3cd418494c576e8e06b766980\\source\\codegen\\jni\\react\\renderer\\components\\rnsvg\\ComponentDescriptors.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/a81619a3cd418494c576e8e06b766980/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp
+  1.	<eof> parser at end of file
+  2.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__memory/shared_ptr.h:825:39: instantiating function definition 'std::make_shared<facebook::react::DebugStringConvertibleItem, const std::string &, std::string, void>'
+  3.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__memory/shared_ptr.h:814:39: instantiating function definition 'std::allocate_shared<facebook::react::DebugStringConvertibleItem, std::allocator<facebook::react::DebugStringConvertibleItem>, const std::string &, std::string, void>'
+  4.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__memory/allocation_guard.h:48:8: instantiating class definition 'std::__allocation_guard<std::allocator<std::__shared_ptr_emplace<facebook::react::DebugStringConvertibleItem, std::allocator<facebook::react::DebugStringConvertibleItem>>>>'
+  5.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__memory/allocator_traits.h:235:29: instantiating class definition 'std::allocator_traits<std::allocator<std::__shared_ptr_emplace<facebook::react::DebugStringConvertibleItem, std::allocator<facebook::react::DebugStringConvertibleItem>>>>'
+  Exception Code: 0xC000001D
+   #0 0x00007ff73fa89d76 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x639d76)
+   #1 0x00007ff875ed1989 (C:\WINDOWS\System32\ucrtbase.dll+0xc1989)
+   #2 0x00007ff875eb4ab1 (C:\WINDOWS\System32\ucrtbase.dll+0xa4ab1)
+   #3 0x00007ff73fa4c92b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5fc92b)
+   #4 0x00007ff73fa4c942 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5fc942)
+   #5 0x00007ff73f4577b9 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x77b9)
+   #6 0x00007ff73f7c4f9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x374f9e)
+   #7 0x00007ff74099c7f5 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x154c7f5)
+   #8 0x00007ff741f5ba45 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x2b0ba45)
+   #9 0x00007ff743dc7cd2 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4977cd2)
+  #10 0x00007ff74292c64d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34dc64d)
+  #11 0x00007ff74292c149 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34dc149)
+  #12 0x00007ff74291a206 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34ca206)
+  #13 0x00007ff7429383ba (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34e83ba)
+  #14 0x00007ff742910c79 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c0c79)
+  #15 0x00007ff7429104c8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c04c8)
+  #16 0x00007ff7427d9bf8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x3389bf8)
+  #17 0x00007ff7427de0e8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338e0e8)
+  #18 0x00007ff742914c4d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c4c4d)
+  #19 0x00007ff7429170fc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c70fc)
+  #20 0x00007ff742b5c671 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x370c671)
+  #21 0x00007ff740d87a92 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1937a92)
+  #22 0x00007ff742b447dd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f47dd)
+  #23 0x00007ff742b43cfc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f3cfc)
+  #24 0x00007ff742b2b429 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36db429)
+  #25 0x00007ff743de87d6 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x49987d6)
+  #26 0x00007ff742938514 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34e8514)
+  #27 0x00007ff742910c79 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c0c79)
+  #28 0x00007ff7429104c8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c04c8)
+  #29 0x00007ff7427d9bf8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x3389bf8)
+  #30 0x00007ff7427de0e8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338e0e8)
+  #31 0x00007ff742914c4d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c4c4d)
+  #32 0x00007ff7429170fc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c70fc)
+  #33 0x00007ff742b5c671 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x370c671)
+  #34 0x00007ff740d87a92 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1937a92)
+  #35 0x00007ff742b447dd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f47dd)
+  #36 0x00007ff742b43cfc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f3cfc)
+  #37 0x00007ff74250af93 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x30baf93)
+  #38 0x00007ff7427ed44a (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x339d44a)
+  #39 0x00007ff7427dc8b7 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338c8b7)
+  #40 0x00007ff7427dba5d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338ba5d)
+  #41 0x00007ff7427ef1f6 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x339f1f6)
+  #42 0x00007ff742942d5a (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34f2d5a)
+  #43 0x00007ff7429381aa (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34e81aa)
+  #44 0x00007ff742917c77 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c7c77)
+  #45 0x00007ff7427f109d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a109d)
+  #46 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+  #47 0x00007ff7427f11ec (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11ec)
+  #48 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+  #49 0x00007ff740d8b252 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x193b252)
+  #50 0x00007ff740d8ba26 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x193ba26)
+  #51 0x00007ff7441cd824 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4d7d824)
+  #52 0x00007ff742c436de (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x37f36de)
+  #53 0x00007ff740da916e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x195916e)
+  #54 0x00007ff73fb6d000 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x71d000)
+  #55 0x00007ff73fc03c05 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x7b3c05)
+  #56 0x00007ff73f58e070 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13e070)
+  #57 0x00007ff73f58b180 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13b180)
+  #58 0x00007ff740b2a27d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16da27d)
+  #59 0x00007ff73fa4affd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5faffd)
+  #60 0x00007ff740b29ca5 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16d9ca5)
+  #61 0x00007ff73fb1c463 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6cc463)
+  #62 0x00007ff73fb3f96d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6ef96d)
+  #63 0x00007ff73f58a2e2 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13a2e2)
+  #64 0x00007ff73f59b027 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14b027)
+  #65 0x00007ff73f451395 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1395)
+  #66 0x00007ff73f4514c8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14c8)
+  #67 0x00007ff877f0e8d7 (C:\WINDOWS\System32\KERNEL32.DLL+0x2e8d7)
+  #68 0x00007ff878c2c40c (C:\WINDOWS\SYSTEM32\ntdll.dll+0x8c40c)
+  clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+  Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+  Target: i686-none-linux-android24
+  Thread model: posix
+  InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+  clang++: note: diagnostic msg: 
+  ********************
+  
+  PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+  Preprocessed source(s) and associated run script(s) are located at:
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/ComponentDescriptors-45e28c.cpp
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/ComponentDescriptors-45e28c.sh
+  clang++: note: diagnostic msg: 
+  
+  ********************
+  [36/41] Building CXX object RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/EventEmitters.cpp.o
+  [37/41] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o
+  FAILED: rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o 
+  C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o -MF rnsvg_autolinked_build\CMakeFiles\react_codegen_rnsvg.dir\rnsvg.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/rnsvg.cpp
+  LLVM ERROR: out of memory
+  Allocation failed
+  PLEASE submit a bug report to https://github.com/android-ndk/ndk/issues and include the crash backtrace, preprocessed source, and associated run script.
+  Stack dump:
+  0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DREACT_NATIVE_MINOR_VERSION=84 -DRN_SERIALIZABLE_STATE -Dreact_codegen_rnsvg_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -Wpedantic -Wno-gnu-zero-variadic-macro-arguments -Wno-dollar-in-identifier-extension -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o -MF rnsvg_autolinked_build\\CMakeFiles\\react_codegen_rnsvg.dir\\rnsvg.cpp.o.d -o rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o -c C:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/rnsvg.cpp
+  1.	<eof> parser at end of file
+  2.	C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include/react/bridging/Base.h:79:6: instantiating function definition 'facebook::react::bridging::fromJs<facebook::react::AsyncCallback<>, facebook::jsi::Value>'
+  3.	C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include/react/bridging/Function.h:185:3: instantiating function definition 'facebook::react::Bridging<facebook::react::AsyncCallback<>>::fromJs'
+  4.	C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include/react/bridging/Function.h:24:3: instantiating function definition 'facebook::react::AsyncCallback<>::AsyncCallback'
+  5.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__memory/shared_ptr.h:825:39: instantiating function definition 'std::make_shared<facebook::react::SyncCallback<void ()>, facebook::jsi::Runtime &, facebook::jsi::Function, std::shared_ptr<facebook::react::CallInvoker>, void>'
+  6.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__memory/shared_ptr.h:814:39: instantiating function definition 'std::allocate_shared<facebook::react::SyncCallback<void ()>, std::allocator<facebook::react::SyncCallback<void ()>>, facebook::jsi::Runtime &, facebook::jsi::Function, std::shared_ptr<facebook::react::CallInvoker>, void>'
+  7.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__memory/allocation_guard.h:48:8: instantiating class definition 'std::__allocation_guard<std::allocator<std::__shared_ptr_emplace<facebook::react::SyncCallback<void ()>, std::allocator<facebook::react::SyncCallback<void ()>>>>>'
+  Exception Code: 0xC000001D
+   #0 0x00007ff73fa89d76 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x639d76)
+   #1 0x00007ff875ed1989 (C:\WINDOWS\System32\ucrtbase.dll+0xc1989)
+   #2 0x00007ff875eb4ab1 (C:\WINDOWS\System32\ucrtbase.dll+0xa4ab1)
+   #3 0x00007ff73fa4c92b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5fc92b)
+   #4 0x00007ff73fa4c942 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5fc942)
+   #5 0x00007ff73f4577b9 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x77b9)
+   #6 0x00007ff7409ce0cc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x157e0cc)
+   #7 0x00007ff74272c70e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x32dc70e)
+   #8 0x00007ff74283b058 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33eb058)
+   #9 0x00007ff742728998 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x32d8998)
+  #10 0x00007ff74272a499 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x32da499)
+  #11 0x00007ff742729e95 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x32d9e95)
+  #12 0x00007ff742720348 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x32d0348)
+  #13 0x00007ff74271de4d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x32cde4d)
+  #14 0x00007ff742914e32 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c4e32)
+  #15 0x00007ff7429170fc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c70fc)
+  #16 0x00007ff742b5c671 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x370c671)
+  #17 0x00007ff740d87a92 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1937a92)
+  #18 0x00007ff742b447dd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f47dd)
+  #19 0x00007ff742b43cfc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f3cfc)
+  #20 0x00007ff74250af93 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x30baf93)
+  #21 0x00007ff7427ed44a (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x339d44a)
+  #22 0x00007ff7427dc8b7 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338c8b7)
+  #23 0x00007ff7427dba5d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338ba5d)
+  #24 0x00007ff7427ef1f6 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x339f1f6)
+  #25 0x00007ff742942d5a (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34f2d5a)
+  #26 0x00007ff7429381aa (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34e81aa)
+  #27 0x00007ff742917c77 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c7c77)
+  #28 0x00007ff7427f109d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a109d)
+  #29 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+  #30 0x00007ff7427f11ec (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11ec)
+  #31 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+  #32 0x00007ff7427f11ec (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11ec)
+  #33 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+  #34 0x00007ff7427f11ec (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11ec)
+  #35 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+  #36 0x00007ff7427f11ec (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11ec)
+  #37 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+  #38 0x00007ff740d8b252 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x193b252)
+  #39 0x00007ff740d8ba26 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x193ba26)
+  #40 0x00007ff7441cd824 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4d7d824)
+  #41 0x00007ff742c436de (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x37f36de)
+  #42 0x00007ff740da916e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x195916e)
+  #43 0x00007ff73fb6d000 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x71d000)
+  #44 0x00007ff73fc03c05 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x7b3c05)
+  #45 0x00007ff73f58e070 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13e070)
+  #46 0x00007ff73f58b180 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13b180)
+  #47 0x00007ff740b2a27d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16da27d)
+  #48 0x00007ff73fa4affd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5faffd)
+  #49 0x00007ff740b29ca5 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16d9ca5)
+  #50 0x00007ff73fb1c463 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6cc463)
+  #51 0x00007ff73fb3f96d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6ef96d)
+  #52 0x00007ff73f58a2e2 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13a2e2)
+  #53 0x00007ff73f59b027 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14b027)
+  #54 0x00007ff73f451395 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1395)
+  #55 0x00007ff73f4514c8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14c8)
+  #56 0x00007ff877f0e8d7 (C:\WINDOWS\System32\KERNEL32.DLL+0x2e8d7)
+  #57 0x00007ff878c2c40c (C:\WINDOWS\SYSTEM32\ntdll.dll+0x8c40c)
+  clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+  Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+  Target: i686-none-linux-android24
+  Thread model: posix
+  InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+  clang++: note: diagnostic msg: 
+  ********************
+  
+  PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+  Preprocessed source(s) and associated run script(s) are located at:
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/rnsvg-135f83.cpp
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/rnsvg-135f83.sh
+  clang++: note: diagnostic msg: 
+  
+  ********************
+  [38/41] Building CXX object CMakeFiles/appmodules.dir/C_/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o
+  FAILED: CMakeFiles/appmodules.dir/C_/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o 
+  C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DRN_SERIALIZABLE_STATE -Dappmodules_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup -IC:/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/react/renderer/components/rnasyncstorage -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/safeareacontext -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-share/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-share/android/build/generated/source/codegen/jni/react/renderer/components/RNShareSpec -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT CMakeFiles/appmodules.dir/C_/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -MF CMakeFiles\appmodules.dir\C_\Users\nampellah\Documents\MeMoney\android\app\build\generated\autolinking\src\main\jni\autolinking.cpp.o.d -o CMakeFiles/appmodules.dir/C_/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -c C:/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp
+  LLVM ERROR: out of memory
+  Allocation failed
+  PLEASE submit a bug report to https://github.com/android-ndk/ndk/issues and include the crash backtrace, preprocessed source, and associated run script.
+  Stack dump:
+  0.	Program arguments: C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DRN_SERIALIZABLE_STATE -Dappmodules_EXPORTS -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup -IC:/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/react/renderer/components/rnasyncstorage -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-safe-area-context/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/safeareacontext -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-share/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-share/android/build/generated/source/codegen/jni/react/renderer/components/RNShareSpec -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-svg/android/src/main/jni -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/. -IC:/Users/nampellah/Documents/MeMoney/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/cb561e51b07c9aeb2704efeaca7f287f/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/jsi/include -isystem C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT CMakeFiles/appmodules.dir/C_/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -MF CMakeFiles\\appmodules.dir\\C_\\Users\\nampellah\\Documents\\MeMoney\\android\\app\\build\\generated\\autolinking\\src\\main\\jni\\autolinking.cpp.o.d -o CMakeFiles/appmodules.dir/C_/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -c C:/Users/nampellah/Documents/MeMoney/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp
+  1.	<eof> parser at end of file
+  2.	C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorProvider.h:59:29: instantiating function definition 'facebook::react::concreteComponentDescriptorProvider<facebook::react::ConcreteComponentDescriptor<facebook::react::ConcreteViewShadowNode<facebook::react::RNSVGSvgViewAndroidComponentName, facebook::react::RNSVGSvgViewAndroidProps, facebook::react::RNSVGSvgViewAndroidEventEmitter>>>'
+  3.	C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorProvider.h:45:29: instantiating function definition 'facebook::react::concreteComponentDescriptorConstructor<facebook::react::ConcreteComponentDescriptor<facebook::react::ConcreteViewShadowNode<facebook::react::RNSVGSvgViewAndroidComponentName, facebook::react::RNSVGSvgViewAndroidProps, facebook::react::RNSVGSvgViewAndroidEventEmitter>>>'
+  4.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__memory/unique_ptr.h:600:1: instantiating function definition 'std::make_unique<const facebook::react::ConcreteComponentDescriptor<facebook::react::ConcreteViewShadowNode<facebook::react::RNSVGSvgViewAndroidComponentName, facebook::react::RNSVGSvgViewAndroidProps, facebook::react::RNSVGSvgViewAndroidEventEmitter>>, const facebook::react::ComponentDescriptorParameters &>'
+  5.	C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include/react/renderer/core/ConcreteComponentDescriptor.h:46:12: instantiating function definition 'facebook::react::ConcreteComponentDescriptor<facebook::react::ConcreteViewShadowNode<facebook::react::RNSVGSvgViewAndroidComponentName, facebook::react::RNSVGSvgViewAndroidProps, facebook::react::RNSVGSvgViewAndroidEventEmitter>>::ConcreteComponentDescriptor'
+  6.	C:/Users/nampellah/.gradle/caches/8.13/transforms/9f1addeacc31df1691f144783b7efc3a/transformed/react-android-0.84.0-debug/prefab/modules/reactnative/include/react/renderer/core/ConcreteComponentDescriptor.h:99:25: instantiating function definition 'facebook::react::ConcreteComponentDescriptor<facebook::react::ConcreteViewShadowNode<facebook::react::RNSVGSvgViewAndroidComponentName, facebook::react::RNSVGSvgViewAndroidProps, facebook::react::RNSVGSvgViewAndroidEventEmitter>>::cloneProps'
+  7.	C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__memory/shared_ptr.h:411:59: instantiating class definition 'std::shared_ptr<facebook::react::RNSVGSvgViewAndroidProps>'
+  Exception Code: 0xC000001D
+   #0 0x00007ff73fa89d76 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x639d76)
+   #1 0x00007ff875ed1989 (C:\WINDOWS\System32\ucrtbase.dll+0xc1989)
+   #2 0x00007ff875eb4ab1 (C:\WINDOWS\System32\ucrtbase.dll+0xa4ab1)
+   #3 0x00007ff73fa4c92b (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5fc92b)
+   #4 0x00007ff73fa4c942 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5fc942)
+   #5 0x00007ff73f4577b9 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x77b9)
+   #6 0x00007ff73f7c4f9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x374f9e)
+   #7 0x00007ff742910541 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c0541)
+   #8 0x00007ff7427e8426 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x3398426)
+   #9 0x00007ff7427db21f (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338b21f)
+  #10 0x00007ff7427e1a1e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x3391a1e)
+  #11 0x00007ff742914c4d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c4c4d)
+  #12 0x00007ff7429170fc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c70fc)
+  #13 0x00007ff742b5c671 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x370c671)
+  #14 0x00007ff740d87a92 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1937a92)
+  #15 0x00007ff742b447dd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f47dd)
+  #16 0x00007ff742b43cfc (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x36f3cfc)
+  #17 0x00007ff7429cc033 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x357c033)
+  #18 0x00007ff7429caeff (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x357aeff)
+  #19 0x00007ff7429a879d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x355879d)
+  #20 0x00007ff7429c99c2 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x35799c2)
+  #21 0x00007ff742921a7e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34d1a7e)
+  #22 0x00007ff7427ed230 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x339d230)
+  #23 0x00007ff7427dc8b7 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338c8b7)
+  #24 0x00007ff7427dba5d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x338ba5d)
+  #25 0x00007ff7427ef1f6 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x339f1f6)
+  #26 0x00007ff742942d5a (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34f2d5a)
+  #27 0x00007ff7429381aa (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34e81aa)
+  #28 0x00007ff742917c77 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x34c7c77)
+  #29 0x00007ff7427f109d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a109d)
+  #30 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+  #31 0x00007ff7427f11ec (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11ec)
+  #32 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+  #33 0x00007ff7427f11ec (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11ec)
+  #34 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+  #35 0x00007ff7427f11ec (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11ec)
+  #36 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+  #37 0x00007ff7427f11ec (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a11ec)
+  #38 0x00007ff7427f4e9e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x33a4e9e)
+  #39 0x00007ff740d8b252 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x193b252)
+  #40 0x00007ff740d8ba26 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x193ba26)
+  #41 0x00007ff7441cd824 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x4d7d824)
+  #42 0x00007ff742c436de (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x37f36de)
+  #43 0x00007ff740da916e (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x195916e)
+  #44 0x00007ff73fb6d000 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x71d000)
+  #45 0x00007ff73fc03c05 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x7b3c05)
+  #46 0x00007ff73f58e070 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13e070)
+  #47 0x00007ff73f58b180 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13b180)
+  #48 0x00007ff740b2a27d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16da27d)
+  #49 0x00007ff73fa4affd (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x5faffd)
+  #50 0x00007ff740b29ca5 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x16d9ca5)
+  #51 0x00007ff73fb1c463 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6cc463)
+  #52 0x00007ff73fb3f96d (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x6ef96d)
+  #53 0x00007ff73f58a2e2 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x13a2e2)
+  #54 0x00007ff73f59b027 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14b027)
+  #55 0x00007ff73f451395 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x1395)
+  #56 0x00007ff73f4514c8 (C:\Users\nampellah\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe+0x14c8)
+  #57 0x00007ff877f0e8d7 (C:\WINDOWS\System32\KERNEL32.DLL+0x2e8d7)
+  #58 0x00007ff878c2c40c (C:\WINDOWS\SYSTEM32\ntdll.dll+0x8c40c)
+  clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+  Android (12285214, based on r522817b) clang version 18.0.2 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+  Target: i686-none-linux-android24
+  Thread model: posix
+  InstalledDir: C:/Users/nampellah/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin
+  clang++: note: diagnostic msg: 
+  ********************
+  
+  PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+  Preprocessed source(s) and associated run script(s) are located at:
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/autolinking-0b989c.cpp
+  clang++: note: diagnostic msg: C:/Users/NAMPEL~1/AppData/Local/Temp/autolinking-0b989c.sh
+  clang++: note: diagnostic msg: 
+  
+  ********************
+  [39/41] Building CXX object RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/ShadowNodes.cpp.o
+  ninja: build stopped: subcommand failed.
+  
+  C++ build system [build] failed while executing:
+      @echo off
+      "C:\\Users\\nampellah\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe" ^
+        -C ^
+        "C:\\Users\\nampellah\\Documents\\MeMoney\\android\\app\\.cxx\\Debug\\h5d39245\\x86" ^
+        appmodules ^
+        react_codegen_rnsvg ^
+        react_codegen_safeareacontext
+    from C:\Users\nampellah\Documents\MeMoney\android\app
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 4m 46s
+163 actionable tasks: 14 executed, 149 up-to-date

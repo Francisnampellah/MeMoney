@@ -1,0 +1,40 @@
+Starting a Gradle Daemon, 1 busy Daemon could not be reused, use --status for details
+The message received from the daemon indicates that the daemon has disappeared.
+Build request sent: Build{id=8e8ee350-f1d2-4288-9332-74469ba3ca5f, currentDir=C:\Users\nampellah\Documents\MeMoney\android}
+Attempting to read last messages from the daemon log...
+Daemon pid: 3140
+  log file: C:\Users\nampellah\.gradle\daemon\8.13\daemon-3140.out.log
+----- Last 20 lines from daemon log file - daemon-3140.out.log -----
+2026-02-15T22:35:21.262+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 33: received class org.gradle.launcher.daemon.protocol.Build
+2026-02-15T22:35:21.263+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 33: Received non-IO message from client: Build{id=8e8ee350-f1d2-4288-9332-74469ba3ca5f, currentDir=C:\Users\nampellah\Documents\MeMoney\android}
+2026-02-15T22:35:21.264+0300 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=8e8ee350-f1d2-4288-9332-74469ba3ca5f, currentDir=C:\Users\nampellah\Documents\MeMoney\android}.
+2026-02-15T22:35:21.264+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=8e8ee350-f1d2-4288-9332-74469ba3ca5f, currentDir=C:\Users\nampellah\Documents\MeMoney\android} with connection: socket connection from /127.0.0.1:58903 to /127.0.0.1:58904.
+2026-02-15T22:35:21.273+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=8e8ee350-f1d2-4288-9332-74469ba3ca5f, currentDir=C:\Users\nampellah\Documents\MeMoney\android}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:58903 to /127.0.0.1:58904] after 0.010216666666666667 minutes of idle
+2026-02-15T22:35:21.274+0300 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [6da8024d-1ec6-42c6-91b2-800d43ab6f62 port:58903, addresses:[localhost/127.0.0.1]]
+2026-02-15T22:35:21.274+0300 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [6da8024d-1ec6-42c6-91b2-800d43ab6f62 port:58903, addresses:[localhost/127.0.0.1]]
+2026-02-15T22:35:21.280+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-02-15T22:35:21.282+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-02-15T22:35:21.286+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-02-15T22:35:21.287+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2026-02-15T22:35:21.287+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2026-02-15T22:35:21.290+0300 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=8e8ee350-f1d2-4288-9332-74469ba3ca5f, currentDir=C:\Users\nampellah\Documents\MeMoney\android}. Dispatching build started information...
+2026-02-15T22:35:21.290+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 35: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@3319d9f2
+2026-02-15T22:35:21.298+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [USERDOMAIN_ROAMINGPROFILE, EFC_28460_1592913036, PROCESSOR_LEVEL, SESSIONNAME, ALLUSERSPROFILE, PROCESSOR_ARCHITECTURE, VSCODE_PYTHON_AUTOACTIVATE_GUARD, VSCODE_GIT_IPC_HANDLE, PSModulePath, SystemDrive, =ExitCode, VSCODE_INJECTION, COLORTERM, DIRNAME, USERNAME, VSCODE_GIT_ASKPASS_NODE, TERM_PROGRAM_VERSION, ProgramFiles(x86), GIT_ASKPASS, FPS_BROWSER_USER_PROFILE_STRING, APP_HOME, DEFAULT_JVM_OPTS, PATHEXT, DriverData, OneDriveConsumer, PAGER, ProgramData, ProgramW6432, HOMEPATH, PROCESSOR_IDENTIFIER, ProgramFiles, PUBLIC, windir, ZES_ENABLE_SYSMAN, LOCALAPPDATA, USERDOMAIN, FPS_BROWSER_APP_PROFILE_STRING, LOGONSERVER, PROMPT, LANG, VSCODE_GIT_ASKPASS_MAIN, OneDrive, =C:, APPDATA, JAVA_EXE, VSCODE_GIT_ASKPASS_EXTRA_ARGS, CommonProgramFiles, Path, ANTIGRAVITY_CLI_ALIAS, OS, TERM_PROGRAM, COMPUTERNAME, PROCESSOR_REVISION, CommonProgramW6432, ComSpec, APP_BASE_NAME, SystemRoot, TEMP, HOMEDRIVE, USERPROFILE, TMP, CommonProgramFiles(x86), NUMBER_OF_PROCESSORS, ANTIGRAVITY_AGENT]
+2026-02-15T22:35:21.322+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2026-02-15T22:35:21.323+0300 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 3140). The daemon log file: C:\Users\nampellah\.gradle\daemon\8.13\daemon-3140.out.log
+2026-02-15T22:35:21.332+0300 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 2 GiB]
+2026-02-15T22:35:21.341+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2026-02-15T22:35:21.343+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=052e2410-5c46-4589-b29b-6a7614f00772,javaHome=C:\Program Files\Java\jdk-23,javaVersion=23,javaVendor=Oracle Corporation,daemonRegistryDir=C:\Users\nampellah\.gradle\daemon,pid=3140,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=512m,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]----- End of the daemon log -----
+
+JVM crash log found: file:///C:/Users/nampellah/Documents/MeMoney/android/hs_err_pid3140.log
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Gradle build daemon disappeared unexpectedly (it may have been killed or may have crashed)
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.

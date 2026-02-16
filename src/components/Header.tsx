@@ -6,6 +6,7 @@ interface HeaderProps {
     showTabs?: boolean;
     activeTab?: string;
     onTabSelect?: (tab: string) => void;
+    tabs?: string[];
     title?: string;
     showBack?: boolean;
     onBack?: () => void;
@@ -15,11 +16,11 @@ export function Header({
     showTabs = true,
     activeTab = 'Overview',
     onTabSelect,
+    tabs = ['Overview', 'Transactions',],
     title,
     showBack = false,
     onBack
 }: HeaderProps) {
-    const tabs = ['Overview', 'Spot', 'Funding', 'Margin', 'Future'];
 
     return (
         <View style={styles.container}>
