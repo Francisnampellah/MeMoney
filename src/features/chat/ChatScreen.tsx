@@ -248,6 +248,37 @@ export function ChatScreen() {
                 </View>
             </KeyboardAvoidingView>
 
+            {/* Navigation Menu Modal */}
+            <Modal
+                visible={showNavMenu}
+                transparent
+                animationType="fade"
+                onRequestClose={() => setShowNavMenu(false)}
+            >
+                <TouchableOpacity
+                    activeOpacity={1}
+                    style={styles.navModalOverlay}
+                    onPress={() => setShowNavMenu(false)}
+                >
+                    <View style={[styles.navMenu, { bottom: insets.bottom + 80 }]}>
+                        {navigationOptions.map((option, index) => (
+                            <TouchableOpacity
+                                key={option.screen}
+                                style={[
+                                    styles.navMenuItem,
+                                    index < navigationOptions.length - 1 && styles.navMenuItemBorder
+                                ]}
+                                onPress={() => handleNavigateTo(option.screen)}
+                                activeOpacity={0.7}
+                            >
+                                <Icon name={option.icon} size={20} color={theme.colors.primary} />
+                                <Text style={styles.navMenuLabel}>{option.label}</Text>
+                                <Icon name="chevron-right" size={18} color={theme.colors.text.secondary} />
+                            </TouchableOpacity>
+                        ))}
+                    </View>
+                </TouchableOpacity>
+            </Modal>
         </SafeAreaView>
     );
 }
