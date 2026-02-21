@@ -15,6 +15,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useMpesaSms } from '../../services/sms/useMpesaSms';
 import { Transaction } from '../../services/sms/types';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { useTheme } from '../../theme';
 
 const { width } = Dimensions.get('window');
 
@@ -30,12 +31,14 @@ export function TransactionsHistory() {
     const [selectedFilter, setSelectedFilter] = useState<string>('all');
     const [isTypeDropdownOpen, setIsTypeDropdownOpen] = useState(false);
 
-    // Dynamically get unique types present in the current transactions
-    const uniqueTypes = Array.from(new Set(transactions.map(tx => tx.type))).sort();
+    const theme = useTheme();
+    const styles = createStyles(theme);
 
-    // Check if the current filter is one of the specific transaction types
+    // ... unique types and selected check ...
+    const uniqueTypes = Array.from(new Set(transactions.map(tx => tx.type))).sort();
     const isTypeSelected = uniqueTypes.includes(selectedFilter);
 
+    // ... filtering ...
     const filteredTransactions = transactions.filter(tx => {
         const matchesSearch =
             (tx.counterparty_name?.toLowerCase().includes(searchQuery.toLowerCase())) ||
@@ -58,11 +61,11 @@ export function TransactionsHistory() {
             activeOpacity={0.7}
         >
             <View style={styles.iconContainer}>
-                <View style={[styles.typeBadge, { backgroundColor: item.direction === 'RECEIVED' ? '#E1F5FE' : '#FFF3E0' }]}>
+                <View style={[styles.typeBadge, { backgroundColor: item.direction === 'RECEIVED' ? theme.colors.info + '20' : theme.colors.warning + '20' }]}>
                     <Icon
                         name={item.direction === 'RECEIVED' ? 'south-west' : 'north-east'}
                         size={16}
-                        color={item.direction === 'RECEIVED' ? '#0288D1' : '#F57C00'}
+                        color={item.direction === 'RECEIVED' ? theme.colors.info : theme.colors.warning}
                     />
                 </View>
             </View>
@@ -75,7 +78,7 @@ export function TransactionsHistory() {
                 </Text>
             </View>
             <View style={styles.amountContainer}>
-                <Text style={[styles.amount, { color: item.direction === 'RECEIVED' ? '#00C853' : '#FF5252' }]}>
+                <Text style={[styles.amount, { color: item.direction === 'RECEIVED' ? theme.colors.success : theme.colors.error }]}>
                     {item.direction === 'RECEIVED' ? '+' : '-'} {item.currency} {item.amount.toLocaleString()}
                 </Text>
                 {item.balance_after !== null && (
@@ -87,23 +90,21 @@ export function TransactionsHistory() {
 
     return (
         <View style={styles.container}>
-
-
             {/* Search and Filter Section */}
             <View style={styles.searchFilterSection}>
                 {/* Search Bar */}
                 <View style={styles.searchBar}>
-                    <Icon name="search" size={20} color="#999999" />
+                    <Icon name="search" size={20} color={theme.colors.text.secondary} />
                     <TextInput
                         style={styles.searchInput}
                         placeholder="Search transactions..."
-                        placeholderTextColor="#999999"
+                        placeholderTextColor={theme.colors.text.secondary}
                         value={searchQuery}
                         onChangeText={setSearchQuery}
                     />
                     {searchQuery.length > 0 && (
                         <TouchableOpacity onPress={() => setSearchQuery('')}>
-                            <Icon name="close" size={20} color="#999999" />
+                            <Icon name="close" size={20} color={theme.colors.text.secondary} />
                         </TouchableOpacity>
                     )}
                 </View>
@@ -126,7 +127,7 @@ export function TransactionsHistory() {
                         <Icon
                             name="arrow-downward"
                             size={16}
-                            color={selectedFilter === 'received' ? '#000000' : '#999999'}
+                            color={selectedFilter === 'received' ? theme.colors.text.primary : theme.colors.text.secondary}
                         />
                         <Text style={[styles.filterChipText, selectedFilter === 'received' && styles.filterChipTextActive]}>
                             In
@@ -140,7 +141,7 @@ export function TransactionsHistory() {
                         <Icon
                             name="arrow-upward"
                             size={16}
-                            color={selectedFilter === 'sent' ? '#000000' : '#999999'}
+                            color={selectedFilter === 'sent' ? theme.colors.text.primary : theme.colors.text.secondary}
                         />
                         <Text style={[styles.filterChipText, selectedFilter === 'sent' && styles.filterChipTextActive]}>
                             Out
@@ -158,7 +159,7 @@ export function TransactionsHistory() {
                         <Icon
                             name="keyboard-arrow-down"
                             size={18}
-                            color={isTypeSelected ? '#000000' : '#999999'}
+                            color={isTypeSelected ? theme.colors.text.primary : theme.colors.text.secondary}
                         />
                     </TouchableOpacity>
                 </View>
@@ -197,7 +198,7 @@ export function TransactionsHistory() {
                                         {type.replace(/_/g, ' ')}
                                     </Text>
                                     {selectedFilter === type && (
-                                        <Icon name="check" size={18} color="#000" />
+                                        <Icon name="check" size={18} color={theme.colors.text.primary} />
                                     )}
                                 </TouchableOpacity>
                             ))}
@@ -214,7 +215,7 @@ export function TransactionsHistory() {
                 showsVerticalScrollIndicator={false}
                 ListEmptyComponent={
                     <View style={styles.emptyContainer}>
-                        <Icon name="history" size={64} color="#EEE" />
+                        <Icon name="history" size={64} color={theme.colors.divider} />
                         <Text style={styles.emptyText}>No transactions found</Text>
                     </View>
                 }
@@ -223,19 +224,19 @@ export function TransactionsHistory() {
     );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: any) => StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#FFFFFF',
+        backgroundColor: theme.colors.background,
     },
     header: {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        paddingHorizontal: 16,
+        paddingHorizontal: theme.spacing.md,
         paddingVertical: 12,
         borderBottomWidth: 1,
-        borderBottomColor: '#F5F5F5',
+        borderBottomColor: theme.colors.divider,
     },
     backButton: {
         padding: 8,
@@ -243,29 +244,29 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#000',
+        color: theme.colors.text.primary,
     },
     // Search and Filter Section
     searchFilterSection: {
-        paddingHorizontal: 16,
-        marginBottom: 16,
+        paddingHorizontal: theme.spacing.md,
+        marginBottom: theme.spacing.md,
         marginTop: 8,
     },
     searchBar: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#F5F5F7',
-        borderRadius: 12,
-        paddingHorizontal: 16,
+        backgroundColor: theme.colors.surface,
+        borderRadius: theme.borderRadius.lg,
+        paddingHorizontal: theme.spacing.md,
         paddingVertical: 12,
         marginBottom: 12,
         borderWidth: 1,
-        borderColor: '#E5E5E5',
+        borderColor: theme.colors.border,
     },
     searchInput: {
         flex: 1,
         fontSize: 14,
-        color: '#000000',
+        color: theme.colors.text.primary,
         marginLeft: 8,
         padding: 0,
     },
@@ -280,41 +281,41 @@ const styles = StyleSheet.create({
         paddingHorizontal: 12,
         paddingVertical: 8,
         borderRadius: 20,
-        backgroundColor: '#F5F5F5',
+        backgroundColor: theme.colors.surface,
         borderWidth: 1,
-        borderColor: '#E5E5E5',
+        borderColor: theme.colors.border,
         gap: 4,
         marginBottom: 8,
     },
     filterChipActive: {
-        backgroundColor: '#C5FF00',
-        borderColor: '#C5FF00',
+        backgroundColor: theme.colors.primary,
+        borderColor: theme.colors.primary,
     },
     filterChipText: {
         fontSize: 12,
-        color: '#999999',
+        color: theme.colors.text.secondary,
         fontWeight: '600',
     },
     filterChipTextActive: {
-        color: '#000000',
+        color: theme.colors.text.primary,
         fontWeight: 'bold',
     },
     // Dropdown Styles
     modalOverlay: {
         flex: 1,
-        backgroundColor: 'rgba(0,0,0,0.5)',
+        backgroundColor: theme.colors.backdrop,
         justifyContent: 'center',
         alignItems: 'center',
         padding: 24,
     },
     dropdownMenu: {
         width: '100%',
-        backgroundColor: '#FFF',
+        backgroundColor: theme.colors.surface,
         borderRadius: 24,
         padding: 20,
         maxHeight: '60%',
         elevation: 10,
-        shadowColor: '#000',
+        shadowColor: 'black',
         shadowOffset: { width: 0, height: 10 },
         shadowOpacity: 0.2,
         shadowRadius: 20,
@@ -322,7 +323,7 @@ const styles = StyleSheet.create({
     dropdownTitle: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#000',
+        color: theme.colors.text.primary,
         marginBottom: 16,
         textAlign: 'center',
     },
@@ -335,28 +336,28 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingVertical: 14,
         paddingHorizontal: 12,
-        borderRadius: 12,
+        borderRadius: theme.borderRadius.lg,
     },
     dropdownItemActive: {
-        backgroundColor: '#F5F5F5',
+        backgroundColor: theme.colors.divider,
     },
     dropdownItemText: {
         fontSize: 16,
-        color: '#444',
+        color: theme.colors.text.secondary,
     },
     dropdownItemTextActive: {
         fontWeight: 'bold',
-        color: '#000',
+        color: theme.colors.text.primary,
     },
     listContent: {
-        paddingHorizontal: 16,
+        paddingHorizontal: theme.spacing.md,
     },
     transactionItem: {
         flexDirection: 'row',
         alignItems: 'center',
         paddingVertical: 16,
         borderBottomWidth: 1,
-        borderBottomColor: '#F5F5F5',
+        borderBottomColor: theme.colors.divider,
     },
     iconContainer: {
         marginRight: 12,
@@ -374,12 +375,12 @@ const styles = StyleSheet.create({
     name: {
         fontSize: 15,
         fontWeight: 'bold',
-        color: '#000',
+        color: theme.colors.text.primary,
         marginBottom: 2,
     },
     date: {
         fontSize: 12,
-        color: '#999',
+        color: theme.colors.text.secondary,
     },
     amountContainer: {
         alignItems: 'flex-end',
@@ -391,7 +392,7 @@ const styles = StyleSheet.create({
     },
     balance: {
         fontSize: 11,
-        color: '#AAA',
+        color: theme.colors.text.muted,
     },
     emptyContainer: {
         alignItems: 'center',
@@ -401,6 +402,6 @@ const styles = StyleSheet.create({
     emptyText: {
         marginTop: 16,
         fontSize: 16,
-        color: '#CCC',
+        color: theme.colors.placeholder,
     },
 });

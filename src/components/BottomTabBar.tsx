@@ -3,7 +3,7 @@ import { View, StyleSheet, TouchableOpacity } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-export type Tab = 'home' | 'analysis' | 'settings';
+export type Tab = 'home' | 'chat' | 'analysis';
 
 interface BottomTabBarProps {
     activeTab: Tab;
@@ -13,8 +13,12 @@ interface BottomTabBarProps {
     onShare?: () => void;
 }
 
+import { useTheme } from '../theme';
+
 export function BottomTabBar({ activeTab, onTabSelect, showTransactionActions, onPrint, onShare }: BottomTabBarProps) {
     const safeAreaInsets = useSafeAreaInsets();
+    const theme = useTheme();
+    const styles = createStyles(theme);
 
     if (showTransactionActions) {
         return (
@@ -29,7 +33,7 @@ export function BottomTabBar({ activeTab, onTabSelect, showTransactionActions, o
                             <Icon
                                 name="print"
                                 size={24}
-                                color="#FFFFFF"
+                                color={theme.colors.text.inverse}
                             />
                         </View>
                     </TouchableOpacity>
@@ -43,7 +47,7 @@ export function BottomTabBar({ activeTab, onTabSelect, showTransactionActions, o
                             <Icon
                                 name="share"
                                 size={24}
-                                color="#FFFFFF"
+                                color={theme.colors.text.inverse}
                             />
                         </View>
                     </TouchableOpacity>
@@ -64,7 +68,21 @@ export function BottomTabBar({ activeTab, onTabSelect, showTransactionActions, o
                         <Icon
                             name="home"
                             size={24}
-                            color={activeTab === 'home' ? '#000000' : '#FFFFFF'}
+                            color={activeTab === 'home' ? theme.colors.text.primary : theme.colors.text.inverse}
+                        />
+                    </View>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    style={styles.tab}
+                    onPress={() => onTabSelect('chat')}
+                    activeOpacity={0.7}
+                >
+                    <View style={[styles.iconContainer, activeTab === 'chat' && styles.activeIconContainer]}>
+                        <Icon
+                            name="smart-toy"
+                            size={24}
+                            color={activeTab === 'chat' ? theme.colors.text.primary : theme.colors.text.inverse}
                         />
                     </View>
                 </TouchableOpacity>
@@ -78,21 +96,7 @@ export function BottomTabBar({ activeTab, onTabSelect, showTransactionActions, o
                         <Icon
                             name="bar-chart"
                             size={24}
-                            color={activeTab === 'analysis' ? '#000000' : '#FFFFFF'}
-                        />
-                    </View>
-                </TouchableOpacity>
-
-                <TouchableOpacity
-                    style={styles.tab}
-                    onPress={() => onTabSelect('settings')}
-                    activeOpacity={0.7}
-                >
-                    <View style={[styles.iconContainer, activeTab === 'settings' && styles.activeIconContainer]}>
-                        <Icon
-                            name="settings"
-                            size={24}
-                            color={activeTab === 'settings' ? '#000000' : '#FFFFFF'}
+                            color={activeTab === 'analysis' ? theme.colors.text.primary : theme.colors.text.inverse}
                         />
                     </View>
                 </TouchableOpacity>
@@ -101,7 +105,7 @@ export function BottomTabBar({ activeTab, onTabSelect, showTransactionActions, o
     );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: any) => StyleSheet.create({
     container: {
         position: 'absolute',
         bottom: 0,
@@ -112,7 +116,7 @@ const styles = StyleSheet.create({
     },
     tabBar: {
         flexDirection: 'row',
-        backgroundColor: '#000000',
+        backgroundColor: theme.colors.borderDark, // Dark background for the floating bar
         borderRadius: 60,
         paddingVertical: 12,
         paddingHorizontal: 24,
@@ -121,7 +125,7 @@ const styles = StyleSheet.create({
         minWidth: 200,
         maxWidth: 400,
         borderWidth: 1,
-        borderColor: '#000000',
+        borderColor: theme.colors.borderDark,
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 4 },
         shadowOpacity: 0.3,
@@ -141,7 +145,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     activeIconContainer: {
-        backgroundColor: '#C5FF00',
+        backgroundColor: theme.colors.primary,
         borderRadius: 24,
     },
 });

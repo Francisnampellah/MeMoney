@@ -4,7 +4,6 @@ import {
     Text,
     StyleSheet,
     TouchableOpacity,
-    FlatList,
     ScrollView,
     TextInput,
 } from 'react-native';
@@ -16,6 +15,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useAnalytics } from '../../services/analytics/useAnalytics';
 import { useSmartInsights } from '../../services/ai/useSmartInsights';
 import { abbreviateNumber } from '../../services/analytics/utils';
+import { useTheme } from '../../theme';
 
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -28,6 +28,9 @@ export function HomeScreen() {
     const { transactions, loading: smsLoading, error, refresh } = useMpesaSms();
     const { stats, loading: analyticsLoading } = useAnalytics();
     const { insights, loading: aiLoading } = useSmartInsights();
+
+    const theme = useTheme();
+    const styles = createStyles(theme);
 
     // Search and Filter State
     const [searchQuery, setSearchQuery] = useState('');
@@ -48,11 +51,8 @@ export function HomeScreen() {
 
     // Filter and search transactions
     const filteredTransactions = transactions.filter(tx => {
-        // Apply filter
         if (selectedFilter === 'received' && tx.direction !== 'RECEIVED') return false;
         if (selectedFilter === 'sent' && tx.direction !== 'SENT') return false;
-
-        // Apply search
         if (searchQuery) {
             const query = searchQuery.toLowerCase();
             return (
@@ -62,7 +62,6 @@ export function HomeScreen() {
                 tx.transaction_id?.toLowerCase().includes(query)
             );
         }
-
         return true;
     });
 
@@ -104,7 +103,7 @@ export function HomeScreen() {
                             <Text style={styles.pnlSubLabel}>Last 30 Days</Text>
                         </View>
                         <TouchableOpacity>
-                            <Icon name="insights" size={20} color="#C5FF00" />
+                            <Icon name="insights" size={20} color={theme.colors.primary} />
                         </TouchableOpacity>
                     </View>
 
@@ -123,7 +122,7 @@ export function HomeScreen() {
                     {topInsight && (
                         <View style={styles.homeInsightBox}>
                             <View style={styles.homeInsightHeader}>
-                                <Icon name="lightbulb" size={14} color="#C5FF00" />
+                                <Icon name="lightbulb" size={14} color={theme.colors.primary} />
                                 <Text style={styles.homeInsightTitle}>AI TIP: {topInsight.title}</Text>
                             </View>
                             <Text style={styles.homeInsightDesc} numberOfLines={2}>
@@ -133,24 +132,6 @@ export function HomeScreen() {
                     )}
                 </View>
 
-                {/* Action Buttons */}
-                {/* <View style={styles.actionButtonsContainer}>
-                    <TouchableOpacity style={[styles.actionButton, styles.depositButton]}>
-                        <Icon name="add-circle" size={32} color="#FFFFFF" />
-                        <Text style={styles.actionLabelDeposit}>Deposit</Text>
-                    </TouchableOpacity>
-
-                    <TouchableOpacity style={[styles.actionButton, styles.withdrawButton]}>
-                        <Icon name="remove-circle" size={32} color="#FFFFFF" />
-                        <Text style={styles.actionLabelWithdraw}>Withdraw</Text>
-                    </TouchableOpacity>
-
-                    <TouchableOpacity style={[styles.actionButton, styles.transferButton]}>
-                        <Icon name="swap-horiz" size={32} color="#000000" />
-                        <Text style={styles.actionLabelTransfer}>Transfer</Text>
-                    </TouchableOpacity>
-                </View> */}
-
                 {/* SMS Permission Banner */}
                 {!hasPermission && (
                     <TouchableOpacity
@@ -159,7 +140,7 @@ export function HomeScreen() {
                         disabled={isPermissionLoading}
                         activeOpacity={0.8}
                     >
-                        <Icon name="sms" size={20} color="#FFFFFF" style={{ marginRight: 8 }} />
+                        <Icon name="sms" size={20} color={theme.colors.text.inverse} style={{ marginRight: 8 }} />
                         <Text style={styles.permissionBannerText}>
                             {isPermissionLoading ? 'Requesting...' : 'Enable SMS Access'}
                         </Text>
@@ -170,17 +151,17 @@ export function HomeScreen() {
                 <View style={styles.searchFilterSection}>
                     {/* Search Bar */}
                     <View style={styles.searchBar}>
-                        <Icon name="search" size={20} color="#999999" />
+                        <Icon name="search" size={20} color={theme.colors.text.secondary} />
                         <TextInput
                             style={styles.searchInput}
                             placeholder="Search transactions..."
-                            placeholderTextColor="#999999"
+                            placeholderTextColor={theme.colors.text.secondary}
                             value={searchQuery}
                             onChangeText={setSearchQuery}
                         />
                         {searchQuery.length > 0 && (
                             <TouchableOpacity onPress={() => setSearchQuery('')}>
-                                <Icon name="close" size={20} color="#999999" />
+                                <Icon name="close" size={20} color={theme.colors.text.secondary} />
                             </TouchableOpacity>
                         )}
                     </View>
@@ -203,7 +184,7 @@ export function HomeScreen() {
                             <Icon
                                 name="arrow-downward"
                                 size={16}
-                                color={selectedFilter === 'received' ? '#000000' : '#999999'}
+                                color={selectedFilter === 'received' ? theme.colors.text.primary : theme.colors.text.secondary}
                             />
                             <Text style={[styles.filterChipText, selectedFilter === 'received' && styles.filterChipTextActive]}>
                                 Received
@@ -217,7 +198,7 @@ export function HomeScreen() {
                             <Icon
                                 name="arrow-upward"
                                 size={16}
-                                color={selectedFilter === 'sent' ? '#000000' : '#999999'}
+                                color={selectedFilter === 'sent' ? theme.colors.text.primary : theme.colors.text.secondary}
                             />
                             <Text style={[styles.filterChipText, selectedFilter === 'sent' && styles.filterChipTextActive]}>
                                 Sent
@@ -262,7 +243,7 @@ export function HomeScreen() {
 
                     {!smsLoading && transactions.length === 0 && (
                         <View style={styles.emptyState}>
-                            <Icon name="inbox" size={48} color="#CCCCCC" />
+                            <Icon name="inbox" size={48} color={theme.colors.placeholder} />
                             <Text style={styles.emptyText}>No transactions yet</Text>
                         </View>
                     )}
@@ -298,11 +279,11 @@ export function HomeScreen() {
                     {filteredTransactions.length > transactionLimit && (
                         <TouchableOpacity
                             style={styles.viewAllButton}
-                            onPress={() => navigation.navigate('Transactions' as any)}
+                            onPress={() => navigation.navigate('TransactionsHistory' as any)}
                             activeOpacity={0.7}
                         >
                             <Text style={styles.viewAllText}>View All Transactions</Text>
-                            <Icon name="chevron-right" size={20} color="#666" />
+                            <Icon name="chevron-right" size={20} color={theme.colors.text.secondary} />
                         </TouchableOpacity>
                     )}
                 </View>
@@ -311,43 +292,43 @@ export function HomeScreen() {
     );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: any) => StyleSheet.create({
     // Container
     container: {
         flex: 1,
-        backgroundColor: '#F8F8F8',
+        backgroundColor: theme.colors.background,
     },
 
     // Content
     content: {
-        paddingHorizontal: 16,
-        paddingTop: 16,
+        paddingHorizontal: theme.spacing.md,
+        paddingTop: theme.spacing.md,
         paddingBottom: 80,
     },
 
     // Balance Card
     balanceCard: {
-        backgroundColor: '#FFFFFF',
+        backgroundColor: theme.colors.surface,
         borderRadius: 20,
         padding: 20,
-        marginBottom: 16,
+        marginBottom: theme.spacing.md,
         borderWidth: 1,
-        borderColor: '#000000',
+        borderColor: theme.colors.border,
     },
     balanceHeader: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: 8,
+        marginBottom: theme.spacing.sm,
     },
     balanceLabel: {
         fontSize: 14,
-        color: '#666666',
+        color: theme.colors.text.secondary,
         fontWeight: '500',
     },
     menuIcon: {
         fontSize: 20,
-        color: '#666666',
+        color: theme.colors.text.secondary,
     },
     balanceAmountRow: {
         flexDirection: 'row',
@@ -357,35 +338,35 @@ const styles = StyleSheet.create({
     balanceAmount: {
         fontSize: 48,
         fontWeight: 'bold',
-        color: '#000000',
+        color: theme.colors.text.primary,
         letterSpacing: -1,
     },
     balanceDecimal: {
         fontSize: 32,
         fontWeight: '400',
-        color: '#999999',
+        color: theme.colors.text.secondary,
     },
     currencyBadge: {
-        backgroundColor: '#C5FF00',
+        backgroundColor: theme.colors.primary,
         paddingHorizontal: 12,
         paddingVertical: 6,
-        borderRadius: 16,
+        borderRadius: theme.borderRadius.xl,
         alignSelf: 'flex-start',
     },
     currencyText: {
         fontSize: 12,
         fontWeight: 'bold',
-        color: '#000000',
+        color: theme.colors.text.inverse,
     },
 
     // PnL Card
     pnlCard: {
-        backgroundColor: '#000000',
-        borderRadius: 16,
-        padding: 16,
-        marginBottom: 16,
+        backgroundColor: theme.colors.secondary,
+        borderRadius: theme.borderRadius.xl,
+        padding: theme.spacing.md,
+        marginBottom: theme.spacing.md,
         borderWidth: 1,
-        borderColor: '#000000',
+        borderColor: theme.colors.borderDark,
     },
     pnlHeader: {
         flexDirection: 'row',
@@ -395,22 +376,14 @@ const styles = StyleSheet.create({
     },
     pnlLabel: {
         fontSize: 14,
-        color: '#FFFFFF',
+        color: theme.colors.text.inverse,
         fontWeight: '600',
     },
     pnlSubLabel: {
         fontSize: 12,
-        color: '#999999',
+        color: theme.colors.text.secondary,
         marginTop: 2,
-    },
-    pnlMenuIcon: {
-        fontSize: 20,
-        color: '#FFFFFF',
-    },
-    pnlContent: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
+        opacity: 0.7,
     },
     analyticsDetailsRow: {
         flexDirection: 'row',
@@ -423,27 +396,27 @@ const styles = StyleSheet.create({
     },
     analyticLabel: {
         fontSize: 12,
-        color: '#999999',
+        color: theme.colors.text.secondary,
         marginBottom: 4,
     },
     analyticValueIn: {
         fontSize: 16,
         fontWeight: 'bold',
-        color: '#C5FF00',
+        color: theme.colors.primary,
     },
     analyticValueOut: {
         fontSize: 16,
         fontWeight: 'bold',
-        color: '#FFFFFF',
+        color: theme.colors.text.inverse,
     },
     analyticDivider: {
         width: 1,
         height: 30,
-        backgroundColor: '#333333',
+        backgroundColor: theme.colors.borderDark,
     },
     homeInsightBox: {
-        backgroundColor: '#1A1A1A',
-        borderRadius: 12,
+        backgroundColor: theme.colors.cardDark,
+        borderRadius: theme.borderRadius.lg,
         padding: 12,
         marginTop: 8,
     },
@@ -456,91 +429,23 @@ const styles = StyleSheet.create({
     homeInsightTitle: {
         fontSize: 10,
         fontWeight: 'bold',
-        color: '#C5FF00',
+        color: theme.colors.primary,
         textTransform: 'uppercase',
         letterSpacing: 0.5,
     },
     homeInsightDesc: {
         fontSize: 12,
-        color: '#CCCCCC',
+        color: theme.colors.text.secondary,
         lineHeight: 16,
-    },
-    pnlAmountSection: {
-        flex: 1,
-    },
-    pnlAmount: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        color: '#C5FF00',
-        marginBottom: 4,
-    },
-    pnlPercentage: {
-        fontSize: 14,
-        color: '#C5FF00',
-    },
-    chartPlaceholder: {
-        width: 100,
-        height: 60,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    chartText: {
-        fontSize: 40,
-    },
-
-    // Action Buttons
-    actionButtonsContainer: {
-        flexDirection: 'row',
-        gap: 12,
-        marginBottom: 24,
-    },
-    actionButton: {
-        flex: 1,
-        height: 100,
-        borderRadius: 16,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderWidth: 1,
-        borderColor: '#000000',
-    },
-    depositButton: {
-        backgroundColor: '#00D68F',
-    },
-    withdrawButton: {
-        backgroundColor: '#000000',
-    },
-    transferButton: {
-        backgroundColor: '#C5FF00',
-    },
-    actionIconContainer: {
-        marginBottom: 8,
-    },
-    actionIcon: {
-        fontSize: 32,
-    },
-    actionLabelDeposit: {
-        fontSize: 14,
-        fontWeight: '600',
-        color: '#FFFFFF',
-    },
-    actionLabelWithdraw: {
-        fontSize: 14,
-        fontWeight: '600',
-        color: '#FFFFFF',
-    },
-    actionLabelTransfer: {
-        fontSize: 14,
-        fontWeight: '600',
-        color: '#000000',
     },
 
     // Permission Banner
     permissionBanner: {
         flexDirection: 'row',
-        backgroundColor: '#000000',
+        backgroundColor: theme.colors.secondary,
         paddingVertical: 16,
         paddingHorizontal: 24,
-        borderRadius: 12,
+        borderRadius: theme.borderRadius.lg,
         marginBottom: 24,
         alignItems: 'center',
         justifyContent: 'center',
@@ -548,32 +453,32 @@ const styles = StyleSheet.create({
     permissionBannerText: {
         fontSize: 16,
         fontWeight: '600',
-        color: '#FFFFFF',
+        color: theme.colors.text.inverse,
     },
 
     // Balance Section
     balanceSection: {
-        backgroundColor: '#FFFFFF',
-        borderRadius: 16,
-        padding: 16,
+        backgroundColor: theme.colors.surface,
+        borderRadius: theme.borderRadius.xl,
+        padding: theme.spacing.md,
         paddingBottom: 24,
     },
     balanceSectionHeader: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: 16,
+        marginBottom: theme.spacing.md,
     },
     sectionTitle: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#000000',
+        color: theme.colors.text.primary,
     },
 
     // Loading & Empty States
     loadingText: {
         textAlign: 'center',
-        color: '#666666',
+        color: theme.colors.text.secondary,
         fontSize: 14,
         marginTop: 32,
     },
@@ -581,17 +486,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: 48,
     },
-    emptyIcon: {
-        fontSize: 48,
-        marginBottom: 16,
-    },
     emptyText: {
         fontSize: 16,
-        color: '#999999',
+        color: theme.colors.text.secondary,
         textAlign: 'center',
     },
 
-    // Balance Item (Token List)
+    // Balance Item
     balanceItem: {
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -607,13 +508,16 @@ const styles = StyleSheet.create({
         width: 40,
         height: 40,
         borderRadius: 20,
-        backgroundColor: '#F8F8F8',
+        backgroundColor: theme.colors.background,
         justifyContent: 'center',
         alignItems: 'center',
         marginRight: 12,
+        borderWidth: 1,
+        borderColor: theme.colors.border,
     },
     tokenIconText: {
         fontSize: 20,
+        color: theme.colors.text.primary,
     },
     tokenInfo: {
         flex: 1,
@@ -621,12 +525,12 @@ const styles = StyleSheet.create({
     tokenName: {
         fontSize: 16,
         fontWeight: '600',
-        color: '#000000',
+        color: theme.colors.text.primary,
         marginBottom: 2,
     },
     tokenNetwork: {
         fontSize: 12,
-        color: '#999999',
+        color: theme.colors.text.secondary,
     },
     balanceItemRight: {
         alignItems: 'flex-end',
@@ -634,34 +538,34 @@ const styles = StyleSheet.create({
     tokenAmount: {
         fontSize: 16,
         fontWeight: 'bold',
-        color: '#000000',
+        color: theme.colors.text.primary,
         marginBottom: 2,
     },
     tokenValue: {
         fontSize: 12,
-        color: '#999999',
+        color: theme.colors.text.secondary,
     },
 
     // Search and Filter Section
     searchFilterSection: {
-        marginBottom: 16,
+        marginBottom: theme.spacing.md,
     },
     searchBar: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#FFFFFF',
-        borderRadius: 12,
-        paddingHorizontal: 16,
+        backgroundColor: theme.colors.surface,
+        borderRadius: theme.borderRadius.lg,
+        paddingHorizontal: theme.spacing.md,
         paddingVertical: 12,
         marginBottom: 12,
         borderWidth: 1,
-        borderColor: '#E5E5E5',
+        borderColor: theme.colors.border,
     },
     searchInput: {
         flex: 1,
         fontSize: 14,
-        color: '#000000',
-        marginLeft: 8,
+        color: theme.colors.text.primary,
+        marginLeft: theme.spacing.sm,
         padding: 0,
     },
     filterChips: {
@@ -671,25 +575,25 @@ const styles = StyleSheet.create({
     filterChip: {
         flexDirection: 'row',
         alignItems: 'center',
-        paddingHorizontal: 16,
+        paddingHorizontal: theme.spacing.md,
         paddingVertical: 8,
         borderRadius: 20,
-        backgroundColor: '#F5F5F5',
+        backgroundColor: theme.colors.background,
         borderWidth: 1,
-        borderColor: '#E5E5E5',
+        borderColor: theme.colors.border,
         gap: 4,
     },
     filterChipActive: {
-        backgroundColor: '#C5FF00',
-        borderColor: '#C5FF00',
+        backgroundColor: theme.colors.primary,
+        borderColor: theme.colors.primary,
     },
     filterChipText: {
         fontSize: 14,
-        color: '#999999',
+        color: theme.colors.text.secondary,
         fontWeight: '500',
     },
     filterChipTextActive: {
-        color: '#000000',
+        color: theme.colors.text.primary,
         fontWeight: 'bold',
     },
 
@@ -701,7 +605,7 @@ const styles = StyleSheet.create({
     },
     limitSelectorLabel: {
         fontSize: 12,
-        color: '#999999',
+        color: theme.colors.text.secondary,
         fontWeight: '500',
     },
     limitOptions: {
@@ -711,39 +615,41 @@ const styles = StyleSheet.create({
     limitOption: {
         paddingHorizontal: 10,
         paddingVertical: 4,
-        borderRadius: 12,
-        backgroundColor: '#F5F5F5',
+        borderRadius: theme.borderRadius.lg,
+        backgroundColor: theme.colors.background,
         borderWidth: 1,
-        borderColor: '#E5E5E5',
+        borderColor: theme.colors.border,
         minWidth: 32,
         alignItems: 'center',
     },
     limitOptionActive: {
-        backgroundColor: '#C5FF00',
-        borderColor: '#C5FF00',
+        backgroundColor: theme.colors.primary,
+        borderColor: theme.colors.primary,
     },
     limitOptionText: {
         fontSize: 12,
-        color: '#999999',
+        color: theme.colors.text.secondary,
         fontWeight: '500',
     },
     limitOptionTextActive: {
-        color: '#000000',
+        color: theme.colors.text.primary,
         fontWeight: 'bold',
     },
     viewAllButton: {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingVertical: 16,
-        marginTop: 8,
-        backgroundColor: '#F5F5F7',
-        borderRadius: 12,
+        paddingVertical: theme.spacing.md,
+        marginTop: theme.spacing.sm,
+        backgroundColor: theme.colors.background,
+        borderRadius: theme.borderRadius.lg,
         gap: 4,
+        borderWidth: 1,
+        borderColor: theme.colors.border,
     },
     viewAllText: {
         fontSize: 14,
         fontWeight: '600',
-        color: '#000000',
+        color: theme.colors.text.primary,
     },
 });

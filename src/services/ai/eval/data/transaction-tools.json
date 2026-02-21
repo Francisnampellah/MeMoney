@@ -1,0 +1,224 @@
+[
+  {
+    "data": {
+      "prompt": "Show me my total spending for the last 30 days",
+      "tools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ]
+    },
+    "target": {
+      "expectedTools": ["calculateTransactionsByLastDays"],
+      "category": "golden",
+      "description": "Direct request for last 30 days - should use calculateTransactionsByLastDays"
+    }
+  },
+  {
+    "data": {
+      "prompt": "How much did I spend today?",
+      "tools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ]
+    },
+    "target": {
+      "expectedTools": ["calculateTransactionsByDate"],
+      "category": "golden",
+      "description": "Request for today's spending - should use calculateTransactionsByDate"
+    }
+  },
+  {
+    "data": {
+      "prompt": "What are my biggest spending categories in January?",
+      "tools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ]
+    },
+    "target": {
+      "expectedTools": ["getSpendingByType"],
+      "category": "golden",
+      "description": "Spending by category request - should use getSpendingByType"
+    }
+  },
+  {
+    "data": {
+      "prompt": "Analyze my transactions from January 15 to January 31, 2026",
+      "tools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ]
+    },
+    "target": {
+      "expectedTools": ["calculateTransactionsByDateRange"],
+      "category": "golden",
+      "description": "Date range request - should use calculateTransactionsByDateRange"
+    }
+  },
+  {
+    "data": {
+      "prompt": "Find where I'm wasting money with high transaction fees",
+      "tools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ]
+    },
+    "target": {
+      "expectedTools": ["detectSpendingLeaks"],
+      "category": "golden",
+      "description": "Spending leak detection - should use detectSpendingLeaks"
+    }
+  },
+  {
+    "data": {
+      "prompt": "Give me a complete overview of my spending patterns this month",
+      "tools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ]
+    },
+    "target": {
+      "expectedTools": ["calculateTransactionsByLastDays", "getSpendingByType"],
+      "category": "secondary",
+      "description": "Comprehensive overview - likely needs multiple tools for spending patterns and categories"
+    }
+  },
+  {
+    "data": {
+      "prompt": "What are my recurring expenses with the same people?",
+      "tools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ]
+    },
+    "target": {
+      "expectedTools": ["detectSpendingLeaks"],
+      "category": "secondary",
+      "description": "Recurring pattern detection - detectSpendingLeaks finds recurring patterns"
+    }
+  },
+  {
+    "data": {
+      "prompt": "Compare my spending in January vs February",
+      "tools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ]
+    },
+    "target": {
+      "expectedTools": ["calculateTransactionsByDateRange"],
+      "category": "secondary",
+      "description": "Monthly comparison - would use date ranges for both months"
+    }
+  },
+  {
+    "data": {
+      "prompt": "What is the weather forecast for tomorrow?",
+      "tools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ]
+    },
+    "target": {
+      "forbiddenTools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ],
+      "category": "negative",
+      "description": "Weather question - should NOT use any transaction tools"
+    }
+  },
+  {
+    "data": {
+      "prompt": "How do I cook Tanzanian ugali?",
+      "tools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ]
+    },
+    "target": {
+      "forbiddenTools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ],
+      "category": "negative",
+      "description": "Recipe question - should NOT use any transaction tools"
+    }
+  },
+  {
+    "data": {
+      "prompt": "Tell me the capital of Kenya",
+      "tools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ]
+    },
+    "target": {
+      "forbiddenTools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ],
+      "category": "negative",
+      "description": "General knowledge - should NOT use transaction tools"
+    }
+  },
+  {
+    "data": {
+      "prompt": "Identify wasteful spending patterns in my last 7 days",
+      "tools": [
+        "calculateTransactionsByDate",
+        "calculateTransactionsByDateRange",
+        "calculateTransactionsByLastDays",
+        "getSpendingByType",
+        "detectSpendingLeaks"
+      ]
+    },
+    "target": {
+      "expectedTools": ["detectSpendingLeaks"],
+      "category": "golden",
+      "description": "Wasteful spending - should use detectSpendingLeaks for leak detection"
+    }
+  }
+]

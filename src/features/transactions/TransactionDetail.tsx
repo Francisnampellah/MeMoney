@@ -14,10 +14,13 @@ import { BottomTabBar } from '../../components/BottomTabBar';
 import Share from 'react-native-share';
 import RNPrint from 'react-native-print';
 import { generateReceiptHtml, getReceiptHtml } from '../../utils/pdfGenerator';
+import { useTheme } from '../../theme';
 
 export function TransactionDetail() {
     const route = useRoute<RouteProp<RootStackParamList, 'TransactionDetail'>>();
     const { transaction } = route.params;
+    const theme = useTheme();
+    const styles = createStyles(theme);
 
     const handlePrint = async () => {
         try {
@@ -165,10 +168,10 @@ export function TransactionDetail() {
     );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: any) => StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F0F0F0', // Receipt background context
+        backgroundColor: theme.colors.background,
     },
     scrollContent: {
         padding: 20,
@@ -176,47 +179,29 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     receiptContainer: {
-        backgroundColor: '#FFFFFF',
+        backgroundColor: theme.colors.surface,
         padding: 24,
         width: '100%',
         maxWidth: 400,
         borderWidth: 1,
-        borderRadius: 10, // Sharp corners for receipt
-        // Shadow for lifting the paper
-        // shadowColor: '#000',
-        // shadowOffset: { width: 0, height: 4 },
-        // shadowOpacity: 0.1,
-        // shadowRadius: 12,
-        // elevation: 5,
+        borderColor: theme.colors.border,
+        borderRadius: 10,
     },
     header: {
         alignItems: 'center',
         marginBottom: 16,
     },
-    logoContainer: {
-        width: 40,
-        height: 40,
-        backgroundColor: '#000000',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginBottom: 8,
-    },
-    logoText: {
-        color: '#FFFFFF',
-        fontWeight: 'bold',
-        fontSize: 24,
-    },
     brandText: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#000000',
+        color: theme.colors.text.primary,
         marginBottom: 4,
         letterSpacing: 2,
         textTransform: 'uppercase',
     },
     dateTime: {
         fontSize: 12,
-        color: '#666666',
+        color: theme.colors.text.secondary,
         fontFamily: Platform.OS === 'ios' ? 'Courier' : 'monospace',
     },
     dashedDividerContainer: {
@@ -229,23 +214,23 @@ const styles = StyleSheet.create({
         height: 2,
         width: '100%',
         borderWidth: 1,
-        borderColor: '#CCCCCC',
+        borderColor: theme.colors.divider,
         borderStyle: 'dashed',
         borderRadius: 1,
     },
     tokenBox: {
         borderWidth: 1.5,
-        borderColor: '#000000',
+        borderColor: theme.colors.text.primary,
         borderStyle: 'dashed',
         borderRadius: 8,
         padding: 16,
         alignItems: 'center',
         marginBottom: 16,
-        backgroundColor: '#FAFAFA',
+        backgroundColor: theme.colors.background,
     },
     tokenLabel: {
         fontSize: 10,
-        color: '#666666',
+        color: theme.colors.text.secondary,
         textTransform: 'uppercase',
         marginBottom: 8,
         letterSpacing: 1,
@@ -253,7 +238,7 @@ const styles = StyleSheet.create({
     tokenValue: {
         fontSize: 16,
         fontWeight: 'bold',
-        color: '#000000',
+        color: theme.colors.text.primary,
         fontFamily: Platform.OS === 'ios' ? 'Courier' : 'monospace',
         letterSpacing: 1,
     },
@@ -265,13 +250,13 @@ const styles = StyleSheet.create({
     },
     typeLabel: {
         fontSize: 14,
-        color: '#666666',
+        color: theme.colors.text.secondary,
         fontFamily: Platform.OS === 'ios' ? 'Courier' : 'monospace',
     },
     typeValue: {
         fontSize: 14,
         fontWeight: 'bold',
-        color: '#000000',
+        color: theme.colors.text.primary,
         textTransform: 'uppercase',
     },
     detailsSection: {
@@ -283,18 +268,18 @@ const styles = StyleSheet.create({
     row: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginBottom: 12, // Increased spacing
+        marginBottom: 12,
         alignItems: 'flex-start',
     },
     label: {
         fontSize: 14,
-        color: '#666666',
+        color: theme.colors.text.secondary,
         flex: 1,
         fontFamily: Platform.OS === 'ios' ? 'Courier' : 'monospace',
     },
     value: {
         fontSize: 14,
-        color: '#000000',
+        color: theme.colors.text.primary,
         flex: 2,
         textAlign: 'right',
     },
@@ -312,19 +297,18 @@ const styles = StyleSheet.create({
         marginTop: 16,
         paddingTop: 16,
         borderTopWidth: 2,
-        borderTopColor: '#000000',
-        // borderStyle: 'dotted', // Dotted works on simple borders usually
+        borderTopColor: theme.colors.text.primary,
     },
     totalLabel: {
         fontSize: 16,
         fontWeight: 'bold',
-        color: '#000000',
+        color: theme.colors.text.primary,
         textTransform: 'uppercase',
     },
     totalValue: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#000000',
+        color: theme.colors.text.primary,
     },
     footer: {
         alignItems: 'center',
@@ -332,14 +316,14 @@ const styles = StyleSheet.create({
     },
     footerText: {
         fontSize: 12,
-        color: '#999999',
+        color: theme.colors.text.secondary,
         marginBottom: 8,
         fontStyle: 'italic',
         fontFamily: Platform.OS === 'ios' ? 'Courier' : 'monospace',
     },
     balanceText: {
         fontSize: 12,
-        color: '#000000',
+        color: theme.colors.text.primary,
         fontFamily: Platform.OS === 'ios' ? 'Courier' : 'monospace',
     },
 });

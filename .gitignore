@@ -73,3 +73,11 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+# Environment variables - NEVER commit secrets!
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# Configuration files with secrets
+src/services/ai/config.ts

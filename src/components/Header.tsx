@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { ProfileModal } from './ProfileModal';
+import { useTheme } from '../theme';
 
 interface HeaderProps {
     showTabs?: boolean;
@@ -10,6 +12,13 @@ interface HeaderProps {
     title?: string;
     showBack?: boolean;
     onBack?: () => void;
+    userProfile?: {
+        name?: string;
+        email?: string;
+        phone?: string;
+    };
+    onEditProfile?: () => void;
+    onLogout?: () => void;
 }
 
 export function Header({
@@ -19,60 +28,79 @@ export function Header({
     tabs = ['Overview', 'Transactions',],
     title,
     showBack = false,
-    onBack
+    onBack,
+    userProfile,
+    onEditProfile,
+    onLogout,
 }: HeaderProps) {
+    const [profileModalVisible, setProfileModalVisible] = useState(false);
+    const theme = useTheme();
+    const styles = createStyles(theme);
 
     return (
-        <View style={styles.container}>
-            {/* Header Icons */}
-            <View style={styles.header}>
-                <View style={styles.headerLeft}>
-                    {showBack ? (
-                        <TouchableOpacity style={styles.iconButton} onPress={onBack}>
-                            <Icon name="arrow-back" size={24} color="#FFFFFF" />
-                        </TouchableOpacity>
-                    ) : (
-                        <TouchableOpacity style={styles.iconButton}>
-                            <Icon name="settings" size={20} color="#000000" />
-                        </TouchableOpacity>
+        <>
+            <View style={styles.container}>
+                {/* Header Icons */}
+                <View style={styles.header}>
+                    <View style={styles.headerLeft}>
+                        {showBack ? (
+                            <TouchableOpacity style={styles.iconButton} onPress={onBack}>
+                                <Icon name="arrow-back" size={24} color={theme.colors.text.primary} />
+                            </TouchableOpacity>
+                        ) : (
+                            <TouchableOpacity style={styles.iconButton}>
+                                <Icon name="settings" size={20} color={theme.colors.text.primary} />
+                            </TouchableOpacity>
+                        )}
+                    </View>
+
+                    {title && (
+                        <View style={styles.headerCenter}>
+                            <Text style={styles.headerTitle}>{title}</Text>
+                        </View>
                     )}
+                    <View style={styles.headerRight}>
+                        <TouchableOpacity
+                            style={styles.profileIcon}
+                            onPress={() => setProfileModalVisible(true)}
+                        >
+                            <Icon name="person" size={20} color={theme.colors.text.inverse || '#000000'} />
+                        </TouchableOpacity>
+                    </View>
                 </View>
 
-                {title && (
-                    <View style={styles.headerCenter}>
-                        <Text style={styles.headerTitle}>{title}</Text>
+                {/* Tab Navigation */}
+                {showTabs && (
+                    <View style={styles.tabNavigation}>
+                        {tabs.map((tab) => (
+                            <TouchableOpacity
+                                key={tab}
+                                style={activeTab === tab ? styles.tabActive : styles.tab}
+                                onPress={() => onTabSelect?.(tab)}
+                            >
+                                <Text style={activeTab === tab ? styles.tabTextActive : styles.tabText}>
+                                    {tab}
+                                </Text>
+                            </TouchableOpacity>
+                        ))}
                     </View>
                 )}
-                <View style={styles.headerRight}>
-                    <TouchableOpacity style={styles.profileIcon}>
-                        <Icon name="person" size={20} color="#000000" />
-                    </TouchableOpacity>
-                </View>
             </View>
 
-            {/* Tab Navigation */}
-            {showTabs && (
-                <View style={styles.tabNavigation}>
-                    {tabs.map((tab) => (
-                        <TouchableOpacity
-                            key={tab}
-                            style={activeTab === tab ? styles.tabActive : styles.tab}
-                            onPress={() => onTabSelect?.(tab)}
-                        >
-                            <Text style={activeTab === tab ? styles.tabTextActive : styles.tabText}>
-                                {tab}
-                            </Text>
-                        </TouchableOpacity>
-                    ))}
-                </View>
-            )}
-        </View>
+            <ProfileModal
+                visible={profileModalVisible}
+                onClose={() => setProfileModalVisible(false)}
+                userProfile={userProfile}
+                onEditProfile={onEditProfile}
+                onLogout={onLogout}
+            />
+        </>
     );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (theme: any) => StyleSheet.create({
     container: {
-        backgroundColor: '#000000',
+        backgroundColor: theme.colors.background,
         paddingTop: 30,
     },
 
@@ -81,9 +109,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingHorizontal: 16,
+        paddingHorizontal: theme.spacing.md,
         paddingVertical: 12,
-        backgroundColor: '#000000',
+        backgroundColor: theme.colors.background,
     },
     headerLeft: {
         flexDirection: 'row',
@@ -97,7 +125,7 @@ const styles = StyleSheet.create({
         width: 40,
         height: 40,
         borderRadius: 20,
-        backgroundColor: '#FFFFFF',
+        backgroundColor: theme.colors.surface,
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -108,13 +136,13 @@ const styles = StyleSheet.create({
     headerTitle: {
         fontSize: 16,
         fontWeight: 'bold',
-        color: '#FFFFFF',
+        color: theme.colors.text.primary,
     },
     profileIcon: {
         width: 40,
         height: 40,
         borderRadius: 20,
-        backgroundColor: '#C5FF00',
+        backgroundColor: theme.colors.primary,
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -122,11 +150,11 @@ const styles = StyleSheet.create({
     // Tab Navigation
     tabNavigation: {
         flexDirection: 'row',
-        paddingHorizontal: 16,
+        paddingHorizontal: theme.spacing.md,
         paddingVertical: 12,
-        backgroundColor: '#000000',
+        backgroundColor: theme.colors.background,
         borderBottomWidth: 1,
-        borderBottomColor: '#333333',
+        borderBottomColor: theme.colors.borderDark,
     },
     tab: {
         marginRight: 24,
@@ -136,16 +164,16 @@ const styles = StyleSheet.create({
         marginRight: 24,
         paddingBottom: 8,
         borderBottomWidth: 3,
-        borderBottomColor: '#C5FF00',
+        borderBottomColor: theme.colors.primary,
     },
     tabText: {
         fontSize: 14,
-        color: '#999999',
+        color: theme.colors.text.secondary,
         fontWeight: '500',
     },
     tabTextActive: {
         fontSize: 14,
-        color: '#FFFFFF',
+        color: theme.colors.text.primary,
         fontWeight: 'bold',
     },
 });

@@ -8,12 +8,21 @@ export type HomeTopTabParamList = {
 
 export type MainTabParamList = {
     Home: NavigatorScreenParams<HomeTopTabParamList>;
+    Chat: undefined;
     Analysis: undefined;
-    Settings: undefined;
+};
+
+export type AuthStackParamList = {
+    Login: undefined;
+    SignUp: undefined;
+    ForgotPassword: undefined;
 };
 
 export type RootStackParamList = {
+    Auth: NavigatorScreenParams<AuthStackParamList>;
     Main: NavigatorScreenParams<MainTabParamList>;
     TransactionDetail: { transaction: Transaction };
     TransactionsHistory: undefined;
+    SignUp: undefined;
+    ForgotPassword: undefined;
 };

@@ -7,16 +7,17 @@ import { useAnalytics } from '../../services/analytics/useAnalytics';
 import { abbreviateNumber } from '../../services/analytics/utils';
 import { useSmartInsights } from '../../services/ai/useSmartInsights';
 import { ActivityIndicator } from 'react-native';
+import { useTheme } from '../../theme';
 
 const { width } = Dimensions.get('window');
 
-const getInsightColor = (type: string) => {
+const getInsightColor = (type: string, theme: any) => {
     switch (type) {
-        case 'leak': return '#FFF1F1';
-        case 'save': return '#F1FFF1';
-        case 'spend': return '#F1F7FF';
-        case 'trend': return '#F5F5F5';
-        default: return '#ECECEC';
+        case 'leak': return theme.colors.error + '15';
+        case 'save': return theme.colors.success + '15';
+        case 'spend': return theme.colors.info + '15';
+        case 'trend': return theme.colors.surface;
+        default: return theme.colors.surface;
     }
 };
 
@@ -30,12 +31,12 @@ const getInsightIcon = (type: string) => {
     }
 };
 
-const getInsightIconColor = (type: string) => {
+const getInsightIconColor = (type: string, theme: any) => {
     switch (type) {
-        case 'leak': return '#FF4B4B';
-        case 'save': return '#00D68F';
-        case 'spend': return '#007AFF';
-        default: return '#000000';
+        case 'leak': return theme.colors.error;
+        case 'save': return theme.colors.success;
+        case 'spend': return theme.colors.info;
+        default: return theme.colors.text.primary;
     }
 };
 
@@ -43,13 +44,15 @@ export function AnalysisScreen() {
     const safeAreaInsets = useSafeAreaInsets();
     const { stats, loading } = useAnalytics();
     const { insights, loading: aiLoading } = useSmartInsights();
+    const theme = useTheme();
+    const styles = createStyles(theme);
 
     const isDataEmpty = stats.income === 0 && stats.outcome === 0;
 
     if (loading && isDataEmpty) {
         return (
             <View style={styles.centerContainer}>
-                <ActivityIndicator size="large" color="#C5FF00" />
+                <ActivityIndicator size="large" color={theme.colors.primary} />
                 <Text style={[styles.statusText, { marginTop: 12 }]}>Analyzing your transactions...</Text>
             </View>
         );
@@ -65,7 +68,7 @@ export function AnalysisScreen() {
                 {/* AI Overview Hero */}
                 <View style={styles.aiHeroCard}>
                     <View style={styles.aiHeroBadge}>
-                        <Icon name="auto-awesome" size={14} color="#000" />
+                        <Icon name="auto-awesome" size={14} color={theme.colors.text.inverse} />
                         <Text style={styles.aiHeroBadgeText}>AI OVERVIEW</Text>
                     </View>
                     <Text style={styles.aiHeroTitle}>
@@ -83,15 +86,15 @@ export function AnalysisScreen() {
 
                 {/* Header Stats */}
                 <View style={styles.statsRow}>
-                    <View style={[styles.statCard, { backgroundColor: '#000000' }]}>
+                    <View style={[styles.statCard, { backgroundColor: theme.colors.surface }]}>
                         <Text style={styles.statLabel}>Income</Text>
-                        <Text style={[styles.statValue, { color: '#C5FF00' }]}>
+                        <Text style={[styles.statValue, { color: theme.colors.success }]}>
                             Tsh {abbreviateNumber(stats.income)}
                         </Text>
                     </View>
                     <View style={styles.statCard}>
-                        <Text style={styles.statLabelBlack}>Spending</Text>
-                        <Text style={styles.statValueBlack}>
+                        <Text style={styles.statLabel}>Spending</Text>
+                        <Text style={[styles.statValue, { color: theme.colors.error }]}>
                             Tsh {abbreviateNumber(stats.outcome)}
                         </Text>
                     </View>
@@ -100,7 +103,7 @@ export function AnalysisScreen() {
                 {/* Hidden Leak: Fees & Levies */}
                 <View style={styles.leakCard}>
                     <View style={styles.leakHeader}>
-                        <Icon name="money-off" size={24} color="#FF4B4B" />
+                        <Icon name="money-off" size={24} color={theme.colors.error} />
                         <Text style={styles.leakTitle}>Transaction Leak</Text>
                     </View>
                     <View style={styles.leakContent}>
@@ -108,14 +111,14 @@ export function AnalysisScreen() {
                             <Text style={styles.leakAmount}>Tsh {abbreviateNumber(stats.fees)}</Text>
                             <Text style={styles.leakSubtext}>Paid in Fees & Levies</Text>
                         </View>
-                        <View style={styles.leakBadge}>
+                        <View style={[styles.leakBadge, { backgroundColor: theme.colors.error + '20' }]}>
                             <Text style={styles.leakBadgeText}>
                                 {stats.outcome > 0 ? ((stats.fees / stats.outcome) * 100).toFixed(1) : '0.0'}% of spend
                             </Text>
                         </View>
                     </View>
                     <View style={styles.tipBox}>
-                        <Icon name="lightbulb" size={16} color="#000" />
+                        <Icon name="lightbulb" size={16} color={theme.colors.primary} />
                         <Text style={styles.tipText}>
                             High fees? Try Bank to M-Pesa or Lipa methods to save.
                         </Text>
@@ -133,28 +136,28 @@ export function AnalysisScreen() {
                         yAxisSuffix=""
                         chartConfig={{
                             formatYLabel: (label: string) => abbreviateNumber(parseFloat(label)),
-                            backgroundColor: '#FFFFFF',
-                            backgroundGradientFrom: '#FFFFFF',
-                            backgroundGradientTo: '#FFFFFF',
+                            backgroundColor: theme.colors.surface,
+                            backgroundGradientFrom: theme.colors.surface,
+                            backgroundGradientTo: theme.colors.surface,
                             decimalPlaces: 0,
-                            color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
-                            labelColor: (opacity = 1) => `rgba(102, 102, 102, ${opacity})`,
-                            style: { borderRadius: 16 },
+                            color: (opacity = 1) => theme.colors.text.primary,
+                            labelColor: (opacity = 1) => theme.colors.text.secondary,
+                            style: { borderRadius: theme.borderRadius.xl },
                             propsForLabels: { fontSize: 10 },
                             barPercentage: 0.6,
                         }}
-                        style={{ borderRadius: 16, marginVertical: 8 }}
+                        style={{ borderRadius: theme.borderRadius.xl, marginVertical: 8 }}
                         flatColor={true}
                         fromZero={true}
                         showBarTops={false}
                     />
                     <View style={styles.chartLegend}>
                         <View style={styles.legendItem}>
-                            <View style={[styles.legendDot, { backgroundColor: '#C5FF00' }]} />
+                            <View style={[styles.legendDot, { backgroundColor: theme.colors.primary }]} />
                             <Text style={styles.legendText}>Inflow</Text>
                         </View>
                         <View style={styles.legendItem}>
-                            <View style={[styles.legendDot, { backgroundColor: '#000000' }]} />
+                            <View style={[styles.legendDot, { backgroundColor: theme.colors.secondary }]} />
                             <Text style={styles.legendText}>Outflow</Text>
                         </View>
                     </View>
@@ -168,7 +171,7 @@ export function AnalysisScreen() {
                         width={width - 72}
                         height={180}
                         chartConfig={{
-                            color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+                            color: (opacity = 1) => theme.colors.text.primary,
                         }}
                         accessor={"amount"}
                         backgroundColor={"transparent"}
@@ -206,7 +209,7 @@ export function AnalysisScreen() {
                 {/* Smart Insights */}
                 <View style={styles.insightHeaderRow}>
                     <Text style={styles.sectionTitle}>Smart Insights</Text>
-                    {aiLoading && <ActivityIndicator size="small" color="#000" />}
+                    {aiLoading && <ActivityIndicator size="small" color={theme.colors.primary} />}
                 </View>
 
                 {insights.length > 0 ? (
@@ -215,7 +218,7 @@ export function AnalysisScreen() {
                             key={idx}
                             style={[
                                 styles.newInsightCard,
-                                { borderColor: getInsightIconColor(insight.type) }
+                                { borderColor: getInsightIconColor(insight.type, theme) }
                             ]}
                         >
                             <View style={styles.insightHeader}>
@@ -223,11 +226,11 @@ export function AnalysisScreen() {
                                     <Icon
                                         name={getInsightIcon(insight.type)}
                                         size={18}
-                                        color={getInsightIconColor(insight.type)}
+                                        color={getInsightIconColor(insight.type, theme)}
                                     />
                                 </View>
                                 <Text style={styles.insightTitle}>{insight.title}</Text>
-                                <View style={[styles.typeBadge, { backgroundColor: getInsightIconColor(insight.type) }]}>
+                                <View style={[styles.typeBadge, { backgroundColor: getInsightIconColor(insight.type, theme) }]}>
                                     <Text style={styles.typeBadgeText}>{insight.type.toUpperCase()}</Text>
                                 </View>
                             </View>
@@ -252,10 +255,10 @@ export function AnalysisScreen() {
 }
 
 
-const styles = StyleSheet.create({
+const createStyles = (theme: any) => StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F8F8F8',
+        backgroundColor: theme.colors.background,
     },
     centerContainer: {
         flex: 1,
@@ -263,18 +266,18 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     content: {
-        padding: 16,
+        padding: theme.spacing.md,
     },
     sectionTitle: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#000',
+        color: theme.colors.text.primary,
         marginTop: 24,
         marginBottom: 12,
     },
     statusText: {
         fontSize: 16,
-        color: '#666',
+        color: theme.colors.text.secondary,
     },
 
     // Stats Row
@@ -285,16 +288,16 @@ const styles = StyleSheet.create({
     },
     statCard: {
         flex: 1,
-        backgroundColor: '#FFF',
+        backgroundColor: theme.colors.surface,
         padding: 20,
         borderRadius: 24,
         borderWidth: 1,
-        borderColor: '#000',
+        borderColor: theme.colors.border,
     },
     statLabel: {
         fontSize: 12,
         fontWeight: '900',
-        color: 'rgba(255,255,255,0.6)',
+        color: theme.colors.text.secondary,
         marginBottom: 8,
         letterSpacing: 0.5,
     },
@@ -302,26 +305,14 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: '900',
     },
-    statLabelBlack: {
-        fontSize: 12,
-        fontWeight: '900',
-        color: '#999',
-        marginBottom: 8,
-        letterSpacing: 0.5,
-    },
-    statValueBlack: {
-        fontSize: 20,
-        fontWeight: '900',
-        color: '#000',
-    },
 
     // Leak Card
     leakCard: {
-        backgroundColor: '#FFF',
+        backgroundColor: theme.colors.surface,
         borderRadius: 24,
         padding: 24,
         borderWidth: 1,
-        borderColor: '#000',
+        borderColor: theme.colors.border,
         marginBottom: 20,
     },
     leakHeader: {
@@ -333,7 +324,7 @@ const styles = StyleSheet.create({
     leakTitle: {
         fontSize: 16,
         fontWeight: 'bold',
-        color: '#000',
+        color: theme.colors.text.primary,
     },
     leakContent: {
         flexDirection: 'row',
@@ -344,27 +335,26 @@ const styles = StyleSheet.create({
     leakAmount: {
         fontSize: 24,
         fontWeight: 'bold',
-        color: '#FF4B4B',
+        color: theme.colors.error,
     },
     leakSubtext: {
         fontSize: 12,
-        color: '#999',
+        color: theme.colors.text.secondary,
         marginTop: 2,
     },
     leakBadge: {
-        backgroundColor: '#FFF1F1',
         paddingHorizontal: 10,
         paddingVertical: 4,
         borderRadius: 8,
     },
     leakBadgeText: {
-        color: '#FF4B4B',
+        color: theme.colors.error,
         fontSize: 12,
         fontWeight: '600',
     },
     tipBox: {
         flexDirection: 'row',
-        backgroundColor: '#F5F5F5',
+        backgroundColor: theme.colors.background,
         padding: 12,
         borderRadius: 12,
         gap: 8,
@@ -372,19 +362,20 @@ const styles = StyleSheet.create({
     },
     tipText: {
         fontSize: 11,
-        color: '#666',
+        color: theme.colors.text.secondary,
         flex: 1,
     },
 
     // AI Hero Card
     aiHeroCard: {
-        backgroundColor: '#C5FF00',
+        backgroundColor: theme.colors.primary,
         borderRadius: 24,
         padding: 24,
         marginBottom: 20,
         borderWidth: 1,
-        borderColor: '#000',
-        shadowColor: '#C5FF00',
+        borderColor: theme.colors.border,
+        // Using common shadow for visibility on primary
+        shadowColor: 'black',
         shadowOffset: { width: 0, height: 8 },
         shadowOpacity: 0.3,
         shadowRadius: 15,
@@ -393,7 +384,7 @@ const styles = StyleSheet.create({
     aiHeroBadge: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: 'rgba(255, 255, 255, 0.4)',
+        backgroundColor: 'rgba(255, 255, 255, 0.2)',
         paddingHorizontal: 8,
         paddingVertical: 4,
         borderRadius: 8,
@@ -404,13 +395,13 @@ const styles = StyleSheet.create({
     aiHeroBadgeText: {
         fontSize: 10,
         fontWeight: '900',
-        color: '#000',
+        color: theme.colors.text.inverse,
         letterSpacing: 1,
     },
     aiHeroTitle: {
         fontSize: 22,
         lineHeight: 30,
-        color: '#000',
+        color: theme.colors.text.inverse,
         fontWeight: '400',
     },
     boldText: {
@@ -420,11 +411,11 @@ const styles = StyleSheet.create({
 
     // Category Card
     categoryCard: {
-        backgroundColor: '#FFF',
+        backgroundColor: theme.colors.surface,
         borderRadius: 24,
         padding: 24,
         borderWidth: 1,
-        borderColor: '#000',
+        borderColor: theme.colors.border,
     },
     categoryItem: {
         marginBottom: 16,
@@ -436,41 +427,41 @@ const styles = StyleSheet.create({
     },
     categoryName: {
         fontSize: 14,
-        color: '#000',
+        color: theme.colors.text.primary,
         fontWeight: '500',
     },
     categoryValue: {
         fontSize: 14,
         fontWeight: 'bold',
-        color: '#000',
+        color: theme.colors.text.primary,
     },
     progressBarBg: {
         height: 6,
-        backgroundColor: '#F0F0F0',
+        backgroundColor: theme.colors.background,
         borderRadius: 3,
         overflow: 'hidden',
     },
     progressBarFill: {
         height: '100%',
-        backgroundColor: '#000',
+        backgroundColor: theme.colors.primary,
         borderRadius: 3,
     },
 
     // Insight Card
     newInsightCard: {
-        backgroundColor: '#FFF',
+        backgroundColor: theme.colors.surface,
         borderRadius: 24,
         padding: 20,
         marginBottom: 16,
         borderWidth: 1,
-        borderColor: '#000',
+        borderColor: theme.colors.border,
     },
     insightCard: {
-        backgroundColor: '#FFF',
+        backgroundColor: theme.colors.surface,
         borderRadius: 24,
         padding: 20,
         borderWidth: 1,
-        borderColor: '#000',
+        borderColor: theme.colors.border,
     },
     insightHeaderRow: {
         flexDirection: 'row',
@@ -498,7 +489,7 @@ const styles = StyleSheet.create({
     insightTitle: {
         fontSize: 16,
         fontWeight: '900',
-        color: '#000',
+        color: theme.colors.text.primary,
         flex: 1,
     },
     typeBadge: {
@@ -509,62 +500,22 @@ const styles = StyleSheet.create({
     typeBadgeText: {
         fontSize: 8,
         fontWeight: '900',
-        color: '#FFF',
+        color: theme.colors.text.inverse,
     },
     insightDescription: {
         fontSize: 13,
-        color: '#444',
+        color: theme.colors.text.secondary,
         lineHeight: 20,
-        paddingLeft: 4, // Align slightly with title text
+        paddingLeft: 4,
     },
 
     // Chart Card
     chartCard: {
-        backgroundColor: '#FFF',
+        backgroundColor: theme.colors.surface,
         borderRadius: 24,
         padding: 24,
         borderWidth: 1,
-        borderColor: '#000',
-    },
-    chartYAxis: {
-        height: 180,
-        justifyContent: 'flex-end',
-        borderBottomWidth: 1,
-        borderBottomColor: '#EEE',
-        paddingBottom: 8,
-    },
-    chartBarsContainer: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        alignItems: 'flex-end',
-        height: '100%',
-    },
-    chartBarGroup: {
-        alignItems: 'center',
-        width: 40,
-    },
-    barStack: {
-        flexDirection: 'row',
-        alignItems: 'flex-end',
-        gap: 4,
-        height: '100%',
-    },
-    bar: {
-        width: 12,
-        borderRadius: 4,
-    },
-    incomeBar: {
-        backgroundColor: '#C5FF00',
-        borderWidth: 1,
-        borderColor: '#000',
-    },
-    outcomeBar: {
-        backgroundColor: '#000',
-    },
-    barLabel: {
-        fontSize: 10,
-        color: '#999',
-        marginTop: 8,
+        borderColor: theme.colors.border,
     },
     chartLegend: {
         flexDirection: 'row',
@@ -584,7 +535,7 @@ const styles = StyleSheet.create({
     },
     legendText: {
         fontSize: 12,
-        color: '#666',
+        color: theme.colors.text.muted,
     },
 });
 
