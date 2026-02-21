@@ -23,6 +23,7 @@ export type RootStackParamList = {
     Main: NavigatorScreenParams<MainTabParamList>;
     TransactionDetail: { transaction: Transaction };
     TransactionsHistory: undefined;
+    Settings: undefined;
     SignUp: undefined;
     ForgotPassword: undefined;
 };

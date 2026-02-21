@@ -1,7 +1,7 @@
 import React, { useState, useContext, createContext } from 'react';
 import { StatusBar, useColorScheme } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { enableScreens } from 'react-native-screens';
@@ -14,6 +14,7 @@ import { TransactionDetail } from './src/features/transactions/TransactionDetail
 import { AnalysisScreen } from './src/features/analysis/AnalysisScreen';
 import { ChatScreen } from './src/features/chat';
 import { TransactionsHistory } from './src/features/transactions/TransactionsHistory';
+import { SettingsScreen } from './src/features/settings/SettingsScreen';
 import { BottomTabBar, Tab } from './src/components/BottomTabBar';
 import { Header } from './src/components/Header';
 import { authService } from './src/services/auth';
@@ -27,11 +28,13 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 const BottomTab = createBottomTabNavigator<MainTabParamList>();
 const TopTab = createMaterialTopTabNavigator<HomeTopTabParamList>();
 
-// Auth Context
+// Create contexts
 const AuthContext = createContext<{ logout: () => void }>({ logout: () => { } });
+const RootNavContext = createContext<{ navigateToSettings: () => void }>({ navigateToSettings: () => { } });
 
 function HomeTopTabs() {
   const { logout } = useContext(AuthContext);
+  const { navigateToSettings } = useContext(RootNavContext);
 
   return (
     <TopTab.Navigator
@@ -42,6 +45,7 @@ function HomeTopTabs() {
           showTabs={true}
           tabs={['Overview', 'Transactions']}
           onLogout={logout}
+          onSettings={navigateToSettings}
         />
       )}
     >
@@ -52,6 +56,8 @@ function HomeTopTabs() {
 }
 
 function MainTabs({ logout }: { logout: () => void }) {
+  const { navigateToSettings } = useContext(RootNavContext);
+
   return (
     <BottomTab.Navigator
       screenOptions={{
@@ -60,10 +66,19 @@ function MainTabs({ logout }: { logout: () => void }) {
       tabBar={(props) => {
         const { state, navigation } = props;
         const activeRouteName = state.routeNames[state.index] as Tab;
+        const isChat = activeRouteName.toLowerCase() === 'chat';
+        
+        // Don't show tabBar on Chat screen
+        if (isChat) {
+          return null;
+        }
+        
         return (
           <BottomTabBar
             activeTab={activeRouteName.toLowerCase() as Tab}
             onTabSelect={(tab) => navigation.navigate(tab.charAt(0).toUpperCase() + tab.slice(1) as any)}
+            isCollapsed={false}
+            navigation={navigation}
           />
         );
       }}
@@ -86,6 +101,7 @@ function MainTabs({ logout }: { logout: () => void }) {
               title="Analysis"
               showTabs={false}
               onLogout={logout}
+              onSettings={navigateToSettings}
             />
           )
         }}
@@ -102,6 +118,11 @@ function AppContent({ showSplash, setShowSplash, handleLogout }: {
   handleLogout: () => void
 }) {
   const { settings } = useSettings();
+  const navigationRef = React.useRef<any>(null);
+
+  const navigateToSettings = () => {
+    navigationRef.current?.navigate('Settings');
+  };
 
   return (
     <>
@@ -112,42 +133,64 @@ function AppContent({ showSplash, setShowSplash, handleLogout }: {
         />
       ) : (
         <AuthContext.Provider value={{ logout: handleLogout }}>
-          <NavigationContainer>
-            <StatusBar barStyle={settings.theme === 'dark' ? 'light-content' : 'dark-content'} />
-            <Stack.Navigator screenOptions={{ headerShown: false }}>
-              <Stack.Screen name="Main" component={() => <MainTabs logout={handleLogout} />} />
-              <Stack.Screen
-                name="TransactionDetail"
-                component={TransactionDetail}
-                options={{
-                  headerShown: true,
-                  header: ({ navigation }) => (
-                    <Header
-                      title="Transaction Details"
-                      showBack={true}
-                      onBack={() => navigation.goBack()}
-                      onLogout={handleLogout}
-                    />
-                  ),
-                }}
-              />
-              <Stack.Screen
-                name="TransactionsHistory"
-                component={TransactionsHistory}
-                options={{
-                  headerShown: true,
-                  header: ({ navigation }) => (
-                    <Header
-                      title="All Transactions"
-                      showBack={true}
-                      onBack={() => navigation.goBack()}
-                      onLogout={handleLogout}
-                    />
-                  ),
-                }}
-              />
-            </Stack.Navigator>
-          </NavigationContainer>
+          <RootNavContext.Provider value={{ navigateToSettings }}>
+            <NavigationContainer ref={navigationRef}>
+              <StatusBar barStyle={settings.theme === 'dark' ? 'light-content' : 'dark-content'} />
+              <Stack.Navigator screenOptions={{ headerShown: false }}>
+                <Stack.Screen 
+                  name="Main" 
+                  component={() => <MainTabs logout={handleLogout} />}
+                />
+                <Stack.Screen
+                  name="TransactionDetail"
+                  component={TransactionDetail}
+                  options={{
+                    headerShown: true,
+                    header: ({ navigation }) => (
+                      <Header
+                        title="Transaction Details"
+                        showBack={true}
+                        onBack={() => navigation.goBack()}
+                        onLogout={handleLogout}
+                        onSettings={() => navigation.navigate('Settings')}
+                      />
+                    ),
+                  }}
+                />
+                <Stack.Screen
+                  name="TransactionsHistory"
+                  component={TransactionsHistory}
+                  options={{
+                    headerShown: true,
+                    header: ({ navigation }) => (
+                      <Header
+                        title="All Transactions"
+                        showBack={true}
+                        onBack={() => navigation.goBack()}
+                        onLogout={handleLogout}
+                        onSettings={() => navigation.navigate('Settings')}
+                      />
+                    ),
+                  }}
+                />
+                <Stack.Screen
+                  name="Settings"
+                  component={SettingsScreen}
+                  options={{
+                    headerShown: true,
+                    header: ({ navigation }) => (
+                      <Header
+                        title="Settings"
+                        showBack={true}
+                        onBack={() => navigation.goBack()}
+                        onLogout={handleLogout}
+                      />
+                    ),
+                  }}
+                />
+              </Stack.Navigator>
+            </NavigationContainer>
+          </RootNavContext.Provider>
         </AuthContext.Provider>
       )}
     </>

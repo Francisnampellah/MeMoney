@@ -2,21 +2,21 @@ export type ThemeMode = 'light' | 'dark';
 
 export const lightColors = {
     // Brand Colors
-    primary: '#C5FF00', // Lime Accent
-    secondary: '#000000', // True Black
+    primary: '#1976D2', // Blue
+    secondary: '#FFFFFF', // White
 
     // Backgrounds
-    background: '#F8F8F8',
+    background: '#FFFFFF',
     surface: '#FFFFFF',
     card: '#FFFFFF',
-    cardDark: '#F0F0F0',
+    cardDark: '#F5F5F5',
 
     // Text
     text: {
         primary: '#000000',
         secondary: '#666666',
         inverse: '#FFFFFF',
-        accent: '#C5FF00',
+        accent: '#1976D2',
         muted: '#999999',
     },
 
@@ -24,13 +24,13 @@ export const lightColors = {
     success: '#00D68F',
     error: '#FF5252',
     warning: '#FFB800',
-    info: '#0288D1',
+    info: '#1976D2',
 
     // UI Elements
-    border: '#E5E5E5',
+    border: '#E0E0E0',
     borderDark: '#CCCCCC',
-    divider: '#F5F5F5',
-    placeholder: '#CCCCCC',
+    divider: '#EEEEEE',
+    placeholder: '#DFDFDF',
 
     // Overlay/Modal
     backdrop: 'rgba(0, 0, 0, 0.5)',
@@ -38,38 +38,38 @@ export const lightColors = {
 
 export const darkColors = {
     // Brand Colors
-    primary: '#C5FF00', // Lime Accent
-    secondary: '#FFFFFF',
+    primary: '#1A237E', // Dark Blue
+    secondary: '#000000', // Black
 
     // Backgrounds
     background: '#000000',
-    surface: '#1A1A1A',
-    card: '#1A1A1A',
-    cardDark: '#121212',
+    surface: '#121212',
+    card: '#1E1E1E',
+    cardDark: '#0A0A0A',
 
     // Text
     text: {
         primary: '#FFFFFF',
-        secondary: '#999999',
+        secondary: '#B0B0B0',
         inverse: '#000000',
-        accent: '#C5FF00',
-        muted: '#666666',
+        accent: '#42A5F5',
+        muted: '#808080',
     },
 
     // Status
     success: '#00D68F',
     error: '#FF5252',
     warning: '#FFB800',
-    info: '#0288D1',
+    info: '#42A5F5',
 
     // UI Elements
-    border: '#333333',
-    borderDark: '#444444',
-    divider: '#222222',
-    placeholder: '#555555',
+    border: '#2C2C2C',
+    borderDark: '#1E1E1E',
+    divider: '#1A1A1A',
+    placeholder: '#404040',
 
     // Overlay/Modal
-    backdrop: 'rgba(0, 0, 0, 0.7)',
+    backdrop: 'rgba(0, 0, 0, 0.8)',
 };
 
 export const spacing = {

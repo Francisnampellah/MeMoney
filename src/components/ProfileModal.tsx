@@ -19,6 +19,7 @@ interface ProfileModalProps {
     phone?: string;
   };
   onEditProfile?: () => void;
+  onSettings?: () => void;
   onLogout?: () => void;
 }
 
@@ -31,6 +32,7 @@ export function ProfileModal({
     phone: '+254 712 345 678',
   },
   onEditProfile,
+  onSettings,
   onLogout,
 }: ProfileModalProps) {
   return (
@@ -94,6 +96,17 @@ export function ProfileModal({
             >
               <Icon name="edit" size={18} color={theme.colors.text.primary} />
               <Text style={styles.actionButtonText}>Edit Profile</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.actionButton}
+              onPress={() => {
+                onSettings?.();
+                onClose();
+              }}
+            >
+              <Icon name="settings" size={18} color={theme.colors.text.primary} />
+              <Text style={styles.actionButtonText}>Settings</Text>
             </TouchableOpacity>
 
             <TouchableOpacity

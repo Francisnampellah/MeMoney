@@ -18,6 +18,7 @@ interface HeaderProps {
         phone?: string;
     };
     onEditProfile?: () => void;
+    onSettings?: () => void;
     onLogout?: () => void;
 }
 
@@ -31,6 +32,7 @@ export function Header({
     onBack,
     userProfile,
     onEditProfile,
+    onSettings,
     onLogout,
 }: HeaderProps) {
     const [profileModalVisible, setProfileModalVisible] = useState(false);
@@ -92,6 +94,7 @@ export function Header({
                 onClose={() => setProfileModalVisible(false)}
                 userProfile={userProfile}
                 onEditProfile={onEditProfile}
+                onSettings={onSettings}
                 onLogout={onLogout}
             />
         </>

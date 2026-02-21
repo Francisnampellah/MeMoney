@@ -11,18 +11,22 @@ import {
     KeyboardAvoidingView,
     Platform,
     Alert,
+    Modal,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTheme } from '../../theme';
 import { useAIChat } from '../../services/ai/useAIChat';
+import { useNavigation } from '@react-navigation/native';
 
 export function ChatScreen() {
     const theme = useTheme();
     const insets = useSafeAreaInsets();
+    const navigation = useNavigation();
     const styles = createStyles(theme);
     const { messages, loading, error, sendMessage, clearHistory, transactionsAvailable } = useAIChat();
     const [inputValue, setInputValue] = React.useState('');
+    const [showNavMenu, setShowNavMenu] = React.useState(false);
     const flatListRef = useRef<FlatList>(null);
 
     // Auto-scroll to bottom when new messages arrive
@@ -41,6 +45,16 @@ export function ChatScreen() {
         setInputValue('');
         await sendMessage(message);
     };
+
+    const handleNavigateTo = (screen: string) => {
+        setShowNavMenu(false);
+        (navigation.navigate as any)(screen);
+    };
+
+    const navigationOptions = [
+        { icon: 'home', label: 'Home', screen: 'Home' },
+        { icon: 'show-chart', label: 'Analysis', screen: 'Analysis' },
+    ];
 
     const handleClearHistory = () => {
         Alert.alert(
@@ -191,8 +205,14 @@ export function ChatScreen() {
                 )}
 
                 {/* Input Area */}
-                <View style={[styles.inputContainer, { paddingBottom: Math.max(insets.bottom, 64) }]}>
+                <View style={[styles.inputContainer, { paddingBottom: insets.bottom + theme.spacing.md }]}>
                 <View style={styles.inputWrapper}>
+                    <TouchableOpacity
+                        onPress={() => setShowNavMenu(true)}
+                        style={styles.navButton}
+                    >
+                        <Icon name="menu" size={24} color={theme.colors.primary} />
+                    </TouchableOpacity>
                     <TextInput
                         style={styles.input}
                         placeholder="Ask me anything about your finances..."
@@ -222,13 +242,12 @@ export function ChatScreen() {
                         )}
                     </TouchableOpacity>
                 </View>
-                {inputValue.length > 0 && (
-                    <Text style={styles.charCounter}>
-                        {inputValue.length}/500
-                    </Text>
-                )}
+                <Text style={[styles.charCounter, { opacity: inputValue.length > 0 ? 1 : 0 }]}>
+                    {inputValue.length}/500
+                </Text>
                 </View>
             </KeyboardAvoidingView>
+
         </SafeAreaView>
     );
 }
@@ -246,28 +265,38 @@ const createStyles = (theme: any) => StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: theme.spacing.md,
         paddingVertical: theme.spacing.md,
+        backgroundColor: theme.colors.surface,
         borderBottomWidth: 1,
         borderBottomColor: theme.colors.border,
+        elevation: 2,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.1,
+        shadowRadius: 2,
     },
     headerTitle: {
         fontSize: 20,
-        fontWeight: 'bold',
-        color: theme.colors.text.primary,
+        fontWeight: '700',
+        color: theme.colors.primary,
+        letterSpacing: 0.5,
     },
     headerSubtitle: {
         fontSize: 12,
         color: theme.colors.text.secondary,
         marginTop: 2,
+        fontWeight: '400',
     },
     clearButton: {
         padding: 8,
+        borderRadius: theme.borderRadius.md,
+        backgroundColor: theme.colors.background,
     },
 
     // Error Banner
     errorBanner: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: theme.colors.error + '15',
+        backgroundColor: theme.colors.error + '12',
         paddingHorizontal: theme.spacing.md,
         paddingVertical: theme.spacing.sm,
         gap: 8,
@@ -276,12 +305,17 @@ const createStyles = (theme: any) => StyleSheet.create({
         borderRadius: theme.borderRadius.lg,
         borderLeftWidth: 4,
         borderLeftColor: theme.colors.error,
+        elevation: 1,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.05,
+        shadowRadius: 1,
     },
     errorText: {
         flex: 1,
         fontSize: 13,
         color: theme.colors.error,
-        fontWeight: '500',
+        fontWeight: '600',
     },
 
     // Keyboard Avoiding View
@@ -307,11 +341,12 @@ const createStyles = (theme: any) => StyleSheet.create({
         paddingHorizontal: theme.spacing.lg,
     },
     emptyStateTitle: {
-        fontSize: 18,
-        fontWeight: 'bold',
-        color: theme.colors.text.primary,
+        fontSize: 20,
+        fontWeight: '700',
+        color: theme.colors.primary,
         marginTop: theme.spacing.md,
         marginBottom: theme.spacing.sm,
+        letterSpacing: 0.3,
     },
     emptyStateText: {
         fontSize: 14,
@@ -319,6 +354,7 @@ const createStyles = (theme: any) => StyleSheet.create({
         textAlign: 'center',
         lineHeight: 20,
         marginBottom: theme.spacing.lg,
+        fontWeight: '500',
     },
     suggestionChips: {
         width: '100%',
@@ -330,15 +366,20 @@ const createStyles = (theme: any) => StyleSheet.create({
         gap: theme.spacing.sm,
         paddingHorizontal: theme.spacing.md,
         paddingVertical: theme.spacing.sm,
-        backgroundColor: theme.colors.primary + '15',
-        borderRadius: theme.borderRadius.lg,
-        borderWidth: 1,
-        borderColor: theme.colors.primary + '30',
+        backgroundColor: theme.colors.primary + '10',
+        borderRadius: theme.borderRadius.xl,
+        borderWidth: 1.5,
+        borderColor: theme.colors.primary + '25',
+        elevation: 1,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.05,
+        shadowRadius: 1,
     },
     suggestionText: {
         fontSize: 13,
         color: theme.colors.primary,
-        fontWeight: '500',
+        fontWeight: '600',
     },
 
     // Messages
@@ -353,10 +394,15 @@ const createStyles = (theme: any) => StyleSheet.create({
         alignItems: 'flex-start',
     },
     messageBubble: {
-        borderRadius: theme.borderRadius.lg,
+        borderRadius: theme.borderRadius.xl,
         paddingHorizontal: 14,
         paddingVertical: 10,
         maxWidth: '85%',
+        elevation: 1,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.08,
+        shadowRadius: 1,
     },
     userBubble: {
         backgroundColor: theme.colors.primary,
@@ -369,6 +415,7 @@ const createStyles = (theme: any) => StyleSheet.create({
     messageText: {
         fontSize: 14,
         lineHeight: 20,
+        fontWeight: '500',
     },
     userMessageText: {
         color: theme.colors.text.inverse,
@@ -380,6 +427,7 @@ const createStyles = (theme: any) => StyleSheet.create({
         fontSize: 11,
         marginTop: 4,
         marginHorizontal: 4,
+        fontWeight: '400',
     },
     userMessageTime: {
         color: theme.colors.text.secondary,
@@ -391,15 +439,35 @@ const createStyles = (theme: any) => StyleSheet.create({
     // Input Area
     inputContainer: {
         paddingHorizontal: theme.spacing.md,
-        paddingTop: theme.spacing.sm,
+        paddingTop: theme.spacing.md,
         backgroundColor: theme.colors.surface,
         borderTopWidth: 1,
         borderTopColor: theme.colors.border,
+        elevation: 8,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: -2 },
+        shadowOpacity: 0.15,
+        shadowRadius: 4,
     },
     inputWrapper: {
         flexDirection: 'row',
         alignItems: 'flex-end',
         gap: theme.spacing.sm,
+    },
+    navButton: {
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+        backgroundColor: theme.colors.background,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderWidth: 1,
+        borderColor: theme.colors.border,
+        elevation: 2,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.1,
+        shadowRadius: 2,
     },
     input: {
         flex: 1,
@@ -412,6 +480,7 @@ const createStyles = (theme: any) => StyleSheet.create({
         fontSize: 14,
         color: theme.colors.text.primary,
         maxHeight: 100,
+        fontWeight: '500',
     },
     sendButton: {
         width: 40,
@@ -420,15 +489,61 @@ const createStyles = (theme: any) => StyleSheet.create({
         backgroundColor: theme.colors.primary,
         justifyContent: 'center',
         alignItems: 'center',
+        elevation: 3,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3,
     },
     sendButtonDisabled: {
-        backgroundColor: theme.colors.text.secondary + '33',
+        backgroundColor: theme.colors.text.secondary + '40',
+        elevation: 0,
+        shadowOpacity: 0,
     },
     charCounter: {
         fontSize: 11,
         color: theme.colors.text.secondary,
         marginTop: 4,
         alignSelf: 'flex-end',
+        fontWeight: '500',
+    },
+
+    // Navigation Menu
+    navModalOverlay: {
+        flex: 1,
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    },
+    navMenu: {
+        position: 'absolute',
+        left: theme.spacing.md,
+        right: theme.spacing.md,
+        backgroundColor: theme.colors.surface,
+        borderRadius: theme.borderRadius.xl,
+        borderWidth: 1,
+        borderColor: theme.colors.border,
+        overflow: 'hidden',
+        elevation: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 8,
+    },
+    navMenuItem: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingHorizontal: theme.spacing.md,
+        paddingVertical: theme.spacing.md,
+        gap: theme.spacing.md,
+    },
+    navMenuItemBorder: {
+        borderBottomWidth: 1,
+        borderBottomColor: theme.colors.border,
+    },
+    navMenuLabel: {
+        flex: 1,
+        fontSize: 15,
+        fontWeight: '600',
+        color: theme.colors.text.primary,
     },
 
     // Loading Indicator
@@ -442,15 +557,21 @@ const createStyles = (theme: any) => StyleSheet.create({
         alignItems: 'center',
         gap: 8,
         backgroundColor: theme.colors.surface,
-        borderRadius: theme.borderRadius.lg,
+        borderRadius: theme.borderRadius.xl,
         borderWidth: 1,
         borderColor: theme.colors.border,
         paddingHorizontal: 14,
         paddingVertical: 10,
+        elevation: 1,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.08,
+        shadowRadius: 1,
     },
     loadingText: {
         fontSize: 14,
         color: theme.colors.text.secondary,
         fontStyle: 'italic',
+        fontWeight: '500',
     },
 });
